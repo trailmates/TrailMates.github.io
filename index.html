@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailMates - Conectează. Explorează. Aventurează-te.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c5f2d 0%, #97c680 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c5f2d;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 60px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #97c680;
+        }
+
+        .team-member h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c5f2d;
+        }
+
+        .team-member .role {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .team-member .email {
+            color: #97c680;
+            text-decoration: none;
+            font-size: 0.95em;
+            display: inline-block;
+            padding: 8px 20px;
+            border: 2px solid #97c680;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .team-member .email:hover {
+            background: #97c680;
+            color: white;
+        }
+
+        footer {
+            background: #2c5f2d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>🏔️ TrailMates</h1>
+        <p>Conectează. Explorează. Aventurează-te.</p>
+        <p style="font-size: 1.1em; opacity: 0.9;">Platforma ta pentru organizarea drumeților montane și găsirea de parteneri de drumeție</p>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Echipa Noastră</h2>
+        <p class="section-subtitle">Oameni pasionați care construiesc viitorul drumeției montane</p>
+
+        <div class="team-grid">
+
+            <div class="team-member">
+                <img src="ArghirMonica.jpeg" alt="Monica Arghir">
+                <h3>Monica Arghir</h3>
+                <p class="role">PR și Management</p>
+                <a href="mailto:marghir4@gmail.com" class="email">marghir4@gmail.com</a>
+            </div>
+
+            <div class="team-member">
+                <img src="VladimirBucur.jpeg" alt="Vladimir Bucur">
+                <h3>Vladimir Bucur</h3>
+                <p class="role">Developer</p>
+                <a href="mailto:vladimirbucur1@gmail.com" class="email">vladimirbucur1@gmail.com</a>
+            </div>
+
+            <div class="team-member">
+                <img src="AlexandraDragusin.jpg" alt="Alexandra Dragusin">
+                <h3>Alexandra Dragusin</h3>
+                <p class="role">UX/UI</p>
+                <a href="mailto:dragusinalexandraaa@gmail.com" class="email">dragusinalexandraaa@gmail.com</a>
+            </div>
+
+            <div class="team-member">
+                <img src="VioletaComsa.jpg" alt="Violeta Comsa">
+                <h3>Violeta Comsa</h3>
+                <p class="role">Developer</p>
+                <a href="mailto:comsa.iulianavioleta@gmail.com" class="email">comsa.iulianavioleta@gmail.com</a>
+            </div>
+
+            <div class="team-member">
+                <img src="CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
+                <h3>Catalina Sindrilaru</h3>
+                <p class="role">DevOps</p>
+                <a href="mailto:maria.sindrilaru01@gmail.com" class="email">maria.sindrilaru01@gmail.com</a>
+            </div>
+
+            <div class="team-member">
+                <img src="CatalinStan.jpeg" alt="Catalin Stan">
+                <h3>Catalin Stan</h3>
+                <p class="role">Tester</p>
+                <a href="mailto:catalinstan114@gmail.com" class="email">catalinstan114@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Construim viitorul drumeției montane în România</p>
+    </footer>
+</body>
+</html>
