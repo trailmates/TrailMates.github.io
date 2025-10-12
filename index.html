@@ -17,6 +17,33 @@
             color: #333;
         }
 
+        .milestone-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .milestone-buttons a {
+                text-decoration: none;
+                padding: 12px 24px;
+                border: 2px solid #2c5f2d;
+                border-radius: 30px;
+                color: #2c5f2d;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                font-size: 1.1em;
+                background-color: white;
+            }
+
+            .milestone-buttons a:hover {
+                background-color: #97c680;
+                color: white;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                transform: translateY(-2px);
+            }
+
         .hero {
             background: linear-gradient(135deg, #2c5f2d 0%, #97c680 100%);
             color: white;
@@ -242,11 +269,22 @@
     <section class="hero">
         <h1>🏔️ TrailMates</h1>
         <p>Conectează. Explorează. Aventurează-te.</p>
-        <p style="font-size: 1.1em; opacity: 0.9;">Platforma ta pentru organizarea drumeților montane și găsirea de parteneri de drumeție</p>
+        <p style="font-size: 1.1em; opacity: 0.9;">Aplicație ta pentru organizarea drumețiilor montane și găsirea de parteneri de drumeție</p>
+    </section>
+
+    <!-- Milestones Navigation -->
+    <section class="section">
+        <h2 class="section-title">Milestones</h2>
+        <p class="section-subtitle">Navighează rapid la etapele cheie ale proiectului nostru</p>
+        <div class="milestone-buttons">
+            <a href="#milestone1">Milestone 1</a>
+            <!-- <a href="#milestone2">🚀 Milestone 2</a>
+            <a href="#milestone3">📈 Milestone 3</a> -->
+        </div>
     </section>
 
     <!-- Team Section -->
-    <div class="container">
+    <div class="container" id="milestone1">
         <section class="section">
             <h2 class="section-title">Echipa Noastră</h2>
             <p class="section-subtitle">Oameni pasionați care construiesc viitorul drumeției montane</p>
@@ -470,7 +508,7 @@
 
         <!-- Revenue Streams Section -->
         <section class="section">
-            <h2 class="section-title">Fluxuri de Venit</h2>
+            <h2 class="section-title">Fluxuri de venit</h2>
             
             <div class="feature-grid">
                  <div class="feature-card">
