@@ -42,6 +42,10 @@
             padding: 80px 20px;
         }
 
+        .section {
+            margin-bottom: 80px;
+        }
+
         .section-title {
             text-align: center;
             font-size: 2.5em;
@@ -53,7 +57,14 @@
             text-align: center;
             font-size: 1.2em;
             color: #666;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
+        }
+
+        .content-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         .team-grid {
@@ -115,6 +126,90 @@
             color: white;
         }
 
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #97c680;
+        }
+
+        .feature-card h3 {
+            color: #2c5f2d;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-top: 3px solid #97c680;
+        }
+
+        .metric-card h4 {
+            color: #2c5f2d;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .metric-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .highlight-box {
+            background: #f0f8f0;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #2c5f2d;
+            margin: 30px 0;
+        }
+
+        .highlight-box h3 {
+            color: #2c5f2d;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .highlight-box ul li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .highlight-box ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2c5f2d;
+            font-weight: bold;
+        }
+
         footer {
             background: #2c5f2d;
             color: white;
@@ -143,60 +238,273 @@
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
     <section class="hero">
         <h1>🏔️ TrailMates</h1>
         <p>Conectează. Explorează. Aventurează-te.</p>
         <p style="font-size: 1.1em; opacity: 0.9;">Platforma ta pentru organizarea drumeților montane și găsirea de parteneri de drumeție</p>
     </section>
 
+    <!-- Team Section -->
     <div class="container">
-        <h2 class="section-title">Echipa Noastră</h2>
-        <p class="section-subtitle">Oameni pasionați care construiesc viitorul drumeției montane</p>
+        <section class="section">
+            <h2 class="section-title">Echipa Noastră</h2>
+            <p class="section-subtitle">Oameni pasionați care construiesc viitorul drumeției montane</p>
 
-        <div class="team-grid">
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="ArghirMonica.jpeg" alt="Monica Arghir">
+                    <h3>Monica Arghir</h3>
+                    <p class="role">PR și Management</p>
+                    <a href="mailto:marghir4@gmail.com" class="email">marghir4@gmail.com</a>
+                </div>
 
-            <div class="team-member">
-                <img src="ArghirMonica.jpeg" alt="Monica Arghir">
-                <h3>Monica Arghir</h3>
-                <p class="role">PR și Management</p>
-                <a href="mailto:marghir4@gmail.com" class="email">marghir4@gmail.com</a>
+                <div class="team-member">
+                    <img src="VladimirBucur.jpeg" alt="Vladimir Bucur">
+                    <h3>Vladimir Bucur</h3>
+                    <p class="role">Developer</p>
+                    <a href="mailto:vladimirbucur1@gmail.com" class="email">vladimirbucur1@gmail.com</a>
+                </div>
+
+                <div class="team-member">
+                    <img src="AlexandraDragusin.jpg" alt="Alexandra Dragusin">
+                    <h3>Alexandra Dragusin</h3>
+                    <p class="role">UX/UI</p>
+                    <a href="mailto:dragusinalexandraaa@gmail.com" class="email">dragusinalexandraaa@gmail.com</a>
+                </div>
+
+                <div class="team-member">
+                    <img src="VioletaComsa.jpg" alt="Violeta Comsa">
+                    <h3>Violeta Comsa</h3>
+                    <p class="role">Developer</p>
+                    <a href="mailto:comsa.iulianavioleta@gmail.com" class="email">comsa.iulianavioleta@gmail.com</a>
+                </div>
+
+                <div class="team-member">
+                    <img src="CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
+                    <h3>Catalina Sindrilaru</h3>
+                    <p class="role">DevOps</p>
+                    <a href="mailto:maria.sindrilaru01@gmail.com" class="email">maria.sindrilaru01@gmail.com</a>
+                </div>
+
+                <div class="team-member">
+                    <img src="CatalinStan.jpeg" alt="Catalin Stan">
+                    <h3>Catalin Stan</h3>
+                    <p class="role">Tester</p>
+                    <a href="mailto:catalinstan114@gmail.com" class="email">catalinstan114@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section">
+            <h2 class="section-title">Problema</h2>
+            <p class="content-text">
+                Chiar dacă interesul pentru drumeții este în creștere, mulți români renunță la ideea de a merge pe munte din lipsă de parteneri de încredere sau de metode organizate de planificare. De cele mai multe ori, activitățile montane sunt inițiate în cercuri restrânse de prieteni, alături de familie sau prin intermediul unor canale informale, ceea ce limitează accesul altor persoane interesate care nu fac parte din aceste grupuri și reduce oportunitățile de a crea un cerc de persoane mai mari și mai diverse.
+            </p>
+            <p class="content-text">
+                În plus, absența unei comunități online sigure și organizate, unde utilizatorii să poată comunica deschis și să facă schimb de experiențe anterioare, creează neîncredere față de străini, ceea ce îi face pe mulți să evite să meargă în drumeții cu persoane necunoscute.
+            </p>
+            <p class="content-text">
+                Găsirea și selectarea traseelor adecvate este o provocare pentru oricine este interesat de experiențe montane. Lipsa informațiilor detaliate, dispersarea acestora sau situația neactualizată a lor conduce adesea la apariția dificultăților în rândul utilizatorilor atunci când aceștia doresc să găsească traseul potrivit experienței și nivelului lor, condiției fizice sau preferințelor personale. Fără o hartă organizată și interactivă, mulți oameni se bazează pe sugestii sau pe surse externe dificil de verificat.
+            </p>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="section">
+            <h2 class="section-title">Soluția Noastră</h2>
+            <p class="content-text">
+                Soluția propusă este o aplicație mobilă dedicată organizării drumețiilor montane în România, gândită pentru utilizatorii care doresc să facă trasee într-un mod mai organizat și mai sigur. Aplicația oferă posibilitatea utilizatorilor să se înscrie la trasee deja create de alți utilizatori, să-și creeze propriile rute folosind o hartă interactivă, iar la finalul expediției să lase recenzii însoțite de imagini și comentarii despre experiența lor.
+            </p>
+            <p class="content-text">
+                Mai mult decât atât, utilizatorii pot acorda un scor partenerilor de călătorie, ce poate fi văzut în secțiune de rating pe pagina de profil, crescând astfel încrederea atât în comunitate, cât și în soluția noastră.
+            </p>
+            <p class="content-text">
+                Pentru partea de cartografiere ne propunem să folosim un API care ne permite să afișăm trasee montane marcate oficial în România, dar și locații de interes precum cabane, vârfuri sau refugii. Ne dorim o reprezentare vizuală clară a traseelor montane, personalizabilă și intuitivă, care îi ajută pe utilizatori să vadă exact cum arată traseul înainte să plece la drum.
+            </p>
+        </section>
+
+        <!-- Customer Segment Section -->
+        <section class="section">
+            <h2 class="section-title">Segmentul de Clienți</h2>
+            <p class="content-text">
+                Platforma noastră se adresează în principal persoanelor active, pasionate de natură și drumeții montane, care caută o modalitate mai organizată și mai sigură de a-și planifica excursiile.
+            </p>
+            <p class="content-text">
+                Ne îndreptăm către tinerii adulți cu vârste între 18-35 de ani, care reprezintă segmentul cel mai activ și deschis către adoptarea soluțiilor digitale. Totuși, platforma este construită să fie accesibilă și atractivă și pentru grupele de vârstă 36-60 de ani, care au experiență în drumeții și doresc să își continue activitățile montane într-un cadru mai structurat.
+            </p>
+            
+            <div class="highlight-box">
+                <h3>Tipuri de Utilizatori</h3>
+                <ul>
+                    <li>Cei care merg deja frecvent la munte și caută noi trasee sau parteneri</li>
+                    <li>Cei care ar merge mai des dar nu au cu cine sau nu știu cum să organizeze</li>
+                    <li>Persoane care se bazează pe cercuri restrânse de prieteni sau grupuri informale</li>
+                    <li>Drumeți experimentați care doresc instrumente avansate de organizare</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Competition Section -->
+        <section class="section">
+            <h2 class="section-title">Competiția</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Meetup</h3>
+                    <p>Platformă internațională excelentă pentru conectarea socială și găsirea de parteneri, dar îi lipsește partea tehnică specifică drumeților - fără planificator de trasee sau hărți interactive pentru România.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Komoot</h3>
+                    <p>Planificator de rute excepțional și hartă topografică de calitate, dar nu oferă marcaje turistice pentru România și nu permite găsirea de parteneri de drumeție.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Munții Noștrii</h3>
+                    <p>Cel mai bun catalog și hărți pentru România, cu informații detaliate despre trasee, dar fără funcționalități sociale - utilizatorii nu pot interacționa sau găsi parteneri.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Grupuri Facebook</h3>
+                    <p>Comunitate mare și activă, mediu familiar, dar complet lipsite de funcționalități tehnice - fără hărți interactive, recenzii structurate sau catalog organizat.</p>
+                </div>
             </div>
 
-            <div class="team-member">
-                <img src="VladimirBucur.jpeg" alt="Vladimir Bucur">
-                <h3>Vladimir Bucur</h3>
-                <p class="role">Developer</p>
-                <a href="mailto:vladimirbucur1@gmail.com" class="email">vladimirbucur1@gmail.com</a>
+            <div class="highlight-box" style="margin-top: 40px;">
+                <h3>Avantajul Nostru Competitiv</h3>
+                <p style="margin-bottom: 15px; font-size: 1.1em;">
+                    <strong>TrailMates</strong> este singura platformă care îmbină toate cele cinci criterii esențiale:
+                </p>
+                <ul>
+                    <li>Găsirea de parteneri de drumeție</li>
+                    <li>Planificator interactiv de trasee</li>
+                    <li>Sistem de recenzii și evaluări</li>
+                    <li>Istoric personal de drumeții</li>
+                    <li>Hartă interactivă cu trasee montane din România</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Metrics Section -->
+        <section class="section">
+            <h2 class="section-title">Metrici Cheie</h2>
+            
+            <h3 style="color: #2c5f2d; font-size: 1.8em; margin: 40px 0 20px;">Achiziție și Creștere</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Utilizatori Înregistrați</h4>
+                    <p>Numărul total de utilizatori înregistrați - indicator principal de adopție</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Rată de Creștere</h4>
+                    <p>Creșterea lunară a utilizatorilor noi (MAU growth rate)</p>
+                </div>
             </div>
 
-            <div class="team-member">
-                <img src="AlexandraDragusin.jpg" alt="Alexandra Dragusin">
-                <h3>Alexandra Dragusin</h3>
-                <p class="role">UX/UI</p>
-                <a href="mailto:dragusinalexandraaa@gmail.com" class="email">dragusinalexandraaa@gmail.com</a>
+            <h3 style="color: #2c5f2d; font-size: 1.8em; margin: 40px 0 20px;">Engagement</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Utilizatori Activi</h4>
+                    <p>MAU și WAU - utilizatori activi lunar și săptămânal</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Trasee Create</h4>
+                    <p>Numărul de trasee create de utilizatori pe platformă</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Înscrieri la Trasee</h4>
+                    <p>Câți utilizatori se alătură efectiv drumeților organizate</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Rata de Participare</h4>
+                    <p>Procentul utilizatorilor care se înscriu vs. cei care doar navighează</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Recenzii și Comentarii</h4>
+                    <p>Indicator de implicare activă în comunitate</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Frecvența de Utilizare</h4>
+                    <p>Cât de des revine un utilizator activ pe platformă</p>
+                </div>
             </div>
 
-            <div class="team-member">
-                <img src="VioletaComsa.jpg" alt="Violeta Comsa">
-                <h3>Violeta Comsa</h3>
-                <p class="role">Developer</p>
-                <a href="mailto:comsa.iulianavioleta@gmail.com" class="email">comsa.iulianavioleta@gmail.com</a>
+            <h3 style="color: #2c5f2d; font-size: 1.8em; margin: 40px 0 20px;">Retenție</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Rata de Retenție</h4>
+                    <p>Procentul utilizatorilor care revin după 7, 30, 90 de zile</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Churn Rate</h4>
+                    <p>Rata la care utilizatorii abandonează platforma</p>
+                </div>
+                <div class="metric-card">
+                    <h4>Participare Reală</h4>
+                    <p>Utilizatori care au participat la cel puțin o drumeție</p>
+                </div>
             </div>
+        </section>
 
-            <div class="team-member">
-                <img src="CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
-                <h3>Catalina Sindrilaru</h3>
-                <p class="role">DevOps</p>
-                <a href="mailto:maria.sindrilaru01@gmail.com" class="email">maria.sindrilaru01@gmail.com</a>
-            </div>
+        <!-- Cost Structure Section -->
+        <section class="section">
+            <h2 class="section-title">Structura de Costuri</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Dezvoltare & Tehnologie</h3>
+                    <p>• Hosting și infrastructură cloud<br>
+                       • API-uri externe (hărți, imagini)<br>
+                       • Domenii și certificate SSL<br>
+                       • Mentenanță și actualizări</p>
+                </div>
 
-            <div class="team-member">
-                <img src="CatalinStan.jpeg" alt="Catalin Stan">
-                <h3>Catalin Stan</h3>
-                <p class="role">Tester</p>
-                <a href="mailto:catalinstan114@gmail.com" class="email">catalinstan114@gmail.com</a>
+                <div class="feature-card">
+                    <h3>Marketing & Achiziție</h3>
+                    <p>• Campanii publicitare (Google, Facebook, Instagram)<br>
+                       • SEO și content marketing<br>
+                       • Colaborări cu influenceri outdoor</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Revenue Streams Section -->
+        <section class="section">
+            <h2 class="section-title">Fluxuri de Venit</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Abonamente Premium</h3>
+                    <p>• Trasee exclusive<br>
+                       • Planificator avansat<br>
+                       • Statistici detaliate<br>
+                       • Hărți offline<br>
+                       • Badge-uri speciale</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Publicitate</h3>
+                    <p>• Bannere publicitare<br>
+                       • Conținut sponsorizat<br>
+                       • Parteneriate cu branduri outdoor</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Comisioane</h3>
+                    <p>• Organizatori de ture ghidate<br>
+                       • Cabane și pensiuni montane<br>
+                       • Affiliate marketing echipament</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Servicii B2B</h3>
+                    <p>• Pachete pentru team-building-uri<br>
+                       • Licențe corporate<br>
+                       • Marketplace pentru ghizi profesioniști</p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
