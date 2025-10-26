@@ -88,7 +88,7 @@
         }
 
         .content-text {
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.8;
             color: #555;
             margin-bottom: 20px;
@@ -245,6 +245,95 @@
             margin-top: 60px;
         }
 
+		.questions-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 15px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.question-card {
+			background: white;
+			border-left: 5px solid #97c680;
+			padding: 15px 20px;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+			font-size: 1em;
+			line-height: 1.5;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.question-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+		}
+
+		.interviews-grid {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.interview-card {
+			background: white;
+			border-right: 3px solid #97c680;
+			border-left: 3px solid #97c680;
+			border-radius: 15px;
+			box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+			padding: 30px;
+			transition: all 0.3s ease;
+			display: grid;
+			grid-template-columns: 1fr;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.interview-card:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+		}
+
+		.interview-images {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+
+		.interview-images img {
+			width: 300px;          /* lățime fixă mică */
+			height: 300px;         /* înălțime fixă mică */
+			object-fit: contain;  /* se vede întreaga imagine */
+			border-radius: 5px;   /* opțional, rotunjire colțuri */
+		}
+
+		.interview-card h3 {
+			color: #2c5f2d;
+			margin-bottom: 8px;
+			font-size: 1.4em;
+		}
+
+		.interview-card .role {
+			color: #666;
+			font-style: italic;
+			margin-bottom: 15px;
+			font-size: 1.05em;
+		}
+
+		.insights-list {
+			list-style-type: disc;
+			padding-left: 40px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			color: #2c5f2d;
+			font-size: 1em;
+			line-height: 1.7;
+		}
+
+		.insights-list li {
+			margin-bottom: 10px;
+			position: relative;
+		}
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5em;
@@ -277,8 +366,8 @@
         <h2 class="section-title">Milestones</h2>
         <div class="milestone-buttons">
             <a href="#milestone1">Milestone 1</a>
-            <!-- <a href="#milestone2">🚀 Milestone 2</a>
-            <a href="#milestone3">📈 Milestone 3</a> -->
+            <a href="#milestone2">Milestone 2</a>
+            <!-- <a href="#milestone3">📈 Milestone 3</a> -->
         </div>
     </section>
 
@@ -291,42 +380,42 @@
 
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="ArghirMonica.jpeg" alt="Monica Arghir">
+                    <img src="images/ArghirMonica.jpeg" alt="Monica Arghir">
                     <h3>Monica Arghir</h3>
                     <p class="role">PR și Marketing</p>
                     <a href="mailto:marghir4@gmail.com" class="email">marghir4@gmail.com</a>
                 </div>
 
                 <div class="team-member">
-                    <img src="VladimirBucur.jpeg" alt="Vladimir Bucur">
+                    <img src="images/VladimirBucur.jpeg" alt="Vladimir Bucur">
                     <h3>Vladimir Bucur</h3>
                     <p class="role">Developer</p>
                     <a href="mailto:vladimirbucur1@gmail.com" class="email">vladimirbucur1@gmail.com</a>
                 </div>
 
                 <div class="team-member">
-                    <img src="AlexandraDragusin.jpg" alt="Alexandra Dragusin">
+                    <img src="images/AlexandraDragusin.jpg" alt="Alexandra Dragusin">
                     <h3>Alexandra Dragusin</h3>
                     <p class="role">Designer UX/UI</p>
                     <a href="mailto:dragusinalexandraaa@gmail.com" class="email">dragusinalexandraaa@gmail.com</a>
                 </div>
 
                 <div class="team-member">
-                    <img src="VioletaComsa.jpg" alt="Violeta Comsa">
+                    <img src="images/VioletaComsa.jpg" alt="Violeta Comsa">
                     <h3>Violeta Comsa</h3>
                     <p class="role">Developer</p>
                     <a href="mailto:comsa.iulianavioleta@gmail.com" class="email">comsa.iulianavioleta@gmail.com</a>
                 </div>
 
                 <div class="team-member">
-                    <img src="CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
+                    <img src="images/CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
                     <h3>Catalina Sindrilaru</h3>
                     <p class="role">DevOps</p>
                     <a href="mailto:maria.sindrilaru01@gmail.com" class="email">maria.sindrilaru01@gmail.com</a>
                 </div>
 
                 <div class="team-member">
-                    <img src="CatalinStan.jpeg" alt="Catalin Stan">
+                    <img src="images/CatalinStan.jpeg" alt="Catalin Stan">
                     <h3>Catalin Stan</h3>
                     <p class="role">Tester</p>
                     <a href="mailto:catalinstan114@gmail.com" class="email">catalinstan114@gmail.com</a>
@@ -548,6 +637,391 @@
             </div>
         </section>
     </div>
+
+	<h2 class="section-title" id="milestone2">Milestone 2 </h2>
+	<div class="container">
+		<section class="section">
+			<h2 class="section-title">Identificarea problemei</h2>
+			<p class="content-text">
+				Problema a fost observată inițial în mod direct de <strong>Vladimir</strong>, membru al echipei TrailMates și pasionat de drumeții. 
+				De-a lungul timpului, el s-a confruntat frecvent cu situația în care își dorea să meargă pe munte, dar nu avea cu cine. 
+				În numeroase conversații cu alți pasionați de natură, a descoperit că această dificultate este una comună: 
+				mulți oameni își doresc să exploreze trasee montane, dar fie nu găsesc parteneri de încredere, fie nu dispun de o metodă clară și organizată 
+				pentru a planifica o excursie în siguranță.
+			</p>
+			<p class="content-text">
+				Aceste discuții repetate, provenite din experiențe reale, au confirmat că problema nu este una individuală, ci generală în rândul 
+				comunității de drumeți din România. Astfel, am identificat o nevoie clară de a crea o platformă care să conecteze persoanele pasionate 
+				de munte într-un mod sigur și structurat, oferindu-le în același timp instrumente moderne pentru planificarea eficientă a traseelor.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Soluția la care ne-am gândit</h2>
+			 <p class="content-text">
+				Pornind de la dificultățile identificate, am ajuns la concluzia că este nevoie de o platformă digitală completă 
+				care să aducă împreună comunitatea pasionaților de drumeții și să le ofere instrumentele necesare pentru a-și organiza 
+				activitățile într-un mod sigur, transparent și ușor de utilizat.
+			</p>
+			<p class="content-text">
+				Astfel a apărut ideea <strong>TrailMates</strong>, o aplicație mobilă dedicată drumețiilor montane în România, 
+				gândită pentru a combina într-un singur loc toate aspectele importante ale unei experiențe montane: 
+				planificarea traseului, găsirea partenerilor potriviți și împărtășirea experiențelor după drumeție.
+			</p>
+
+			<div class="highlight-box">
+				<h3>Prin TrailMates, utilizatorii pot:</h3>
+				<ul>
+					<li>Găsi și contacta parteneri de drumeție, pe baza intereselor comune și a ratingurilor altor utilizatori;</li>
+					<li>Crea sau se înscrie la trasee existente, folosind o hartă interactivă cu marcaje montane oficiale, cabane, vârfuri și alte puncte de interes;</li>
+					<li>Vizualiza informații detaliate despre trasee – durată, nivel de dificultate, diferență de nivel, altitudine și puncte de plecare/sosire;</li>
+					<li>Acorda recenzii și ratinguri partenerilor de drumeție și traseelor parcurse, contribuind astfel la construirea unei comunități bazate pe încredere;</li>
+					<li>Împărtăși experiențe și fotografii din drumețiile anterioare, consolidând spiritul comunității montane.</li>
+				</ul>
+			</div>
+
+			<p class="content-text">
+				Soluția noastră își propune să îmbine partea <strong>tehnică a planificării</strong> (hărți, date, trasee, informații utile) 
+				cu componenta <strong>socială</strong> (conectarea oamenilor, recenzii, încredere), 
+				pentru a oferi o experiență completă, sigură și plăcută.
+			</p>
+			<p class="content-text">
+				<strong>TrailMates</strong> nu este doar o aplicație, ci un spațiu digital care încurajează explorarea, colaborarea și siguranța pe munte, 
+				oferind pasionaților de natură o modalitate modernă de a descoperi trasee și de a forma legături autentice cu alți iubitori de drumeții.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Planul nostru pentru Customer Discovery</h2>
+			<p class="content-text">
+				Pentru a înțelege mai bine nevoile reale ale utilizatorilor și pentru a valida faptul că problema identificată este una comună 
+				în rândul pasionaților de drumeții, ne propunem să desfășurăm o serie de interviuri și discuții directe cu persoane relevante din comunitate.
+			</p>
+
+			<p class="content-text">
+				Procesul de <strong>customer discovery</strong> va fi realizat în principal prin următoarele metode:
+			</p>
+
+			<div class="highlight-box">
+				<ul>
+					<li><strong>Interviuri față în față:</strong> cu persoane care practică drumeții montane, pentru a discuta deschis despre experiențele lor, 
+					dificultățile întâmpinate și modul în care își organizează în prezent excursiile.</li>
+					<li><strong>Apeluri video sau telefonice:</strong> acolo unde nu este posibilă întâlnirea fizică, pentru a obține același tip de informații într-un mod accesibil.</li>
+				</ul>
+			</div>
+
+			<p class="content-text">
+				Scopul acestor activități este să aflăm:
+			</p>
+
+			<div class="highlight-box">
+				<ul>
+					<li>Dacă și alți oameni se confruntă cu aceeași problemă identificată inițial;</li>
+					<li>Cum reușesc în prezent să o rezolve (de exemplu, prin grupuri informale, recomandări sau aplicații parțiale);</li>
+					<li>Ce tip de soluție consideră ei că ar fi cea mai potrivită pentru a le face experiența de drumeție mai simplă și mai sigură.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Procesul detaliat</h2>
+			<p class="content-text">
+				În procesul de definire a publicului-țintă, am pornit de la analiza generală a pieței activităților montane din România, 
+				care arată că persoanele cu vârste între <strong>20 și 50 de ani</strong> reprezintă segmentul cel mai activ și predispus la a participa la drumeții. 
+				Acest interval este considerat optim din punct de vedere fizic, al mobilității și al interesului pentru activități recreative în aer liber.
+			</p>
+			<p class="content-text">
+				Segmentul vizat este format din persoane active profesional, pasionate de natură, care caută modalități sigure și organizate 
+				de a-și planifica drumețiile. Mulți dintre aceștia se confruntă cu dificultăți în găsirea partenerilor de încredere, 
+				cu informații dispersate despre trasee și cu lipsa unei platforme centralizate care să le ofere atât date verificate, 
+				cât și posibilitatea de a interacționa cu alți drumeți.
+			</p>
+
+			<h3 class="subsection-title">Metode de cercetare</h3>
+			<p class="content-text">
+				Am desfășurat interviuri față în față și apeluri video, realizând în total <strong>[TODO] interviuri</strong>. 
+				Participanții au fost colegi de muncă și prieteni despre care știam deja că sunt pasionați de drumeții montane 
+				și practică frecvent astfel de activități.
+			</p>
+			<p class="content-text">
+				În cadrul discuțiilor nu am menționat ideea aplicației, pentru a evita influențarea răspunsurilor și a obține informații autentice 
+				despre comportamentele, nevoile și provocările reale ale drumeților. 
+				Am ales să includem exclusiv persoane cu experiență în acest domeniu, 
+				deoarece feedback-ul celor care nu practică drumețiile nu ar fi fost relevant pentru validarea soluției propuse.
+			</p>
+
+			<div class="questions-section">
+			<h3 class="subsection-title">Întrebări adresate</h3>
+			<p class="content-text">
+				Întrebările au fost deschise, cu scopul de a descoperi nevoi și comportamente reale, precum:
+			</p>
+			<div class="questions-grid">
+				<div class="question-card">Ce te atrage cel mai mult la mersul pe munte?</div>
+				<div class="question-card">În ce drumeții ai mai fost până acum?</div>
+				<div class="question-card">Când ai fost ultima dată într-o drumeție?</div>
+				<div class="question-card">Cât de des mergi în drumeții pe an?</div>
+				<div class="question-card">Ce te oprește să mergi mai des pe munte? Ce te-ar motiva să mergi mai des?</div>
+				<div class="question-card">Cu cine mergi de obicei? Cum vă organizați?</div>
+				<div class="question-card">Cum îți găsești partenerii de drumeție?</div>
+				<div class="question-card">Cum alegi traseul? Ce factori contează cel mai mult?</div>
+				<div class="question-card">Cum afli dacă traseul e sigur sau potrivit pentru tine?</div>
+				<div class="question-card">Ce te-ar face să mergi mai des în drumeții decât o faci acum?</div>
+				<div class="question-card">Cât de ușor îți este să găsești persoane cu care să mergi?</div>
+				<div class="question-card">Ce aplicații, site-uri sau grupuri folosești pentru planificare?</div>
+				<div class="question-card">Ce informații vrei să știi dinainte despre un traseu (distanță, durată, echipament, risc etc.)?</div>
+				<div class="question-card">Dacă ai putea schimba un singur lucru la modul în care îți organizezi drumețiile, care ar fi acela?</div>
+				<div class="question-card">Ce te face să ai încredere într-un partener de drumeție?</div>
+				<div class="question-card">Ți s-a întâmplat să găsești informații greșite sau învechite despre un traseu?</div>
+				<div class="question-card">Cum reacționezi când cineva nou vrea să se alăture grupului tău?</div>
+			</div>
+
+		</div>
+
+			<h3 class="subsection-title">Colectarea și analiza datelor</h3>
+			<p class="content-text">
+				​Fiecare membru al echipei a realizat câteva interviuri și a notat răspunsurile primite. 
+				După aceea, fiecare a pus informațiile într-o formă mai clară și le-a împărtășit cu restul echipei.
+				În acest fel, am putut analiza împreună toate răspunsurile, am observat ce probleme se repetă cel mai des 
+				și ce nevoi comune au persoanele intervievate. 
+				Acest proces ne-a ajutat să înțelegem mai bine cum gândesc și ce își doresc drumeții.
+			</p>
+
+			<h3 class="subsection-title">Interviurile</h3>
+			<div class="interviews-grid">
+				<!-- Mihnea -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/mihnea1.jpg">
+						<img src="interview/mihnea2.jpg">
+					</div>
+					<h3>Mihnea, 23 ani – București</h3>
+					<p class="role">Software Engineer</p>
+					<p class="content-text">
+						Mihnea este pasionat de natură, muntele reprezentând nu numai un loc de relaxare, ci și un mod plăcut de a face sport. 
+						Îi place să meargă pe trasee în orice anotimp, având o medie de 15 drumeții pe an. 
+						Printre cele mai frumoase trasee pe care le-a făcut se numără Creasta Baiului până pe Vârful Baiul Mare, remarcând peisajele spectaculoase, 
+						dar a avut totuși parte și de aventuri mai primejdioase, cum a fost Valea Albă, un traseu nemarcat ce pornește din Bușteni până pe platoul Bucegilor 
+						(o experiență solicitantă, dar plină de adrenalină).
+					</p>
+					<p class="content-text">
+						Una dintre cele mai memorabile drumeții rămâne cea din Dolomiți, până pe Vârful Marmolada (3250 m). 
+						Mihnea ține legătura cu ceilalți pasionați de munte pe WhatsApp, însă în general merge pe munte cu prieteni și cunoscuți. 
+						Urmărește surse de informare precum Buletinul Nivometeorologic, Mapy și Munții Noștri, pentru a fi mereu pregătit și în siguranță.
+					</p>
+					<p class="content-text">
+						Are și idei inovatoare legate de îmbunătățirea aplicațiilor pentru drumeți, cum ar fi: 
+						o modalitate de afișare a altitudinii live, fără să mai fie nevoie să cauți pe hărțile cu curbe de nivel, 
+						coordonate exacte pentru situații de urgență, sau chiar o funcție de raportare a urșilor.
+					</p>
+				</div>
+
+				<!-- Andy -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/andy.jpg">
+					</div>
+					<h3>Andy, 24 ani – București</h3>
+					<p class="role">Software Developer</p>
+					<p class="content-text">
+						Andy este pasionat de drumeții montane. Mergând aproximativ o dată pe lună în sezon, preferă să exploreze trasee împreună cu prieteni sau grupuri organizate, dar a avut și experiențe alături de persoane necunoscute. 
+						De obicei, își alege traseele documentându-se online, folosind clipuri de pe YouTube sau aplicații dedicate precum <em>Munții Noștri</em>. 
+						Principalele dificultăți pe care le întâmpină sunt sincronizarea deciziilor din grup (alegerea traseului și nivelul de dificultate) și vremea nefavorabilă.
+					</p>
+					<p class="content-text">
+						Andy consideră utilă o aplicație care să ofere informații clare și actualizate despre trasee precum vremea, dificultatea, posibile pericole sau gradul de aglomerație, dar și funcționalități practice precum liste de echipament, rating-uri ale partenerilor de drumeție, recenzii și poze. 
+						Deși are încredere în grupul său de prieteni, este atent la posibilele riscuri atunci când merge cu persoane necunoscute, știind că o accidentare poate afecta tot grupul. 
+						Lipsa de pregătire fizică este principalul motiv pentru care nu merge mai des în drumeții.
+					</p>
+				</div>
+
+				<!-- Tibi -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/tibi1.jpg">
+						<img src="interview/tibi2.jpg">
+					</div>
+					<h3>Tibi, 22 ani – Ploiești</h3>
+					<p class="role">Customer Success Manager</p>
+					<p class="content-text">
+						Tibi este pasionat de natură și aventură, merge în jur de 10 drumeții pe an, în special pe trasee de o zi, cu scopul de a descoperi locuri frumoase și de a trăi experiențe noi. Îi place explorarea spontană și călătorește mult singur, dar anunță mereu pe cineva unde se află și își documentează traseele înainte de plecare.
+					</p>
+					<p class="content-text">
+						Alegerea destinațiilor se bazează pe frumusețea locului și dificultatea moderată a traseului, iar informațiile le caută pe Google, ChatGPT, TikTok sau prin recomandări, însă consideră că multe dintre acestea sunt greșite sau incomplete. Întâmpină dificultăți mari în a găsi parteneri de drumeție deoarece nu are un grup stabil, dar este membru într-un grup de WhatsApp cu aproximativ 900 de membri. Nu a participat încă la drumeții organizate acolo, dar este dispus.
+					</p>
+					<p class="content-text">
+						Preferă drumețiile în țări străine și folosește soluții existente la nivel global precum WorldPackers, dar consideră că acestea au lipsuri și costuri mari. Este motivat de ideea de dezvoltare personală prin disconfort și provocare, premisa lui fiind “Strangers are just friends you haven’t met yet”. 
+						Prețul maxim pe care ar plăti un abonament este de 5,99 USD/lună.
+					</p>
+				</div>
+
+				<!-- Florin -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/florin1.jpg">
+						<img src="interview/florin2.jpg">
+					</div>
+					<h3>Florin, 35 ani</h3>
+					<p class="role">Software Developer</p>
+					<p class="content-text">
+						Florin este pasionat de natură și drumeții, care a început să meargă mai serios pe munte începând cu anul trecut. Anul acesta a participat deja la cinci drumeții și își dorește să meargă din ce în ce mai des, însă principala sa dificultate este lipsa partenerilor experimentați cu care să meargă.
+					</p>
+					<p class="content-text">
+						În prezent, Florin are doar unu-doi prieteni experimentați care organizează astfel de ieșiri, însă de multe ori programul lor nu se potrivește, ceea ce îl face să rateze numeroase ocazii de a merge pe munte. Consideră că ar participa mult mai des la drumeții dacă ar avea o modalitate simplă și sigură de a găsi persoane potrivite.
+					</p>
+					<p class="content-text">
+						Pentru Florin este important să meargă pe munte doar cu persoane experimentate, pentru siguranță și pentru a învăța de la cei cu mai multă experiență. I-ar fi utilă o aplicație cu funcționalități precum:
+						 <ul class="highlight-box" style="margin: 0; padding: 10px 30px;">
+							<li>Posibilitatea de a vedea nivelul de experiență și istoricul de trasee al fiecărui utilizator;</li>
+							<li>Un sistem de filtrare a participanților în funcție de nivelul de pregătire;</li>
+							<li>O secțiune de chat între utilizatori sau un chat dedicat fiecărei drumeții;</li>
+							<li>O interfață intuitivă și ușor de folosit, care să permită personalizarea traseelor și vizualizarea clară a punctelor de interes.</li>
+						</ul>
+					</p>
+				</div>
+
+				<!-- Anton -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/anton1.jpg">
+						<img src="interview/anton2.jpg">
+					</div>
+					<h3>Anton, 55 ani – București</h3>
+					<p class="role">System Administrator, Technical Lead</p>
+					<p class="content-text">
+						Anton merge în aproximativ 10 drumeții pe an, de regulă însoțit de prieteni sau familie, organizarea fiind făcută simplu prin WhatsApp. Alegerea traseelor este influențată de vreme și nivelul de experiență al participanților.
+					</p>
+					<p class="content-text">
+						Folosește aplicații precum Munții Noștri, Mapy.cz sau bloguri pentru a studia descrierea și siguranța traseului – acordând atenție diferenței de altitudine, duratei și eventualelor pasaje periculoase (de exemplu, zone de avalanșă). Găsirea unui grup este ușoară, fiind deschis chiar și la excursii cu necunoscuți, dar preferă trasee mai ușoare în astfel de cazuri.
+					</p>
+					<p class="content-text">
+						 Un aspect care l-ar încuraja să meargă mai des pe munte ar fi mai mult timp liber, iar o nemulțumire constantă este murdăria din unele cabane montane izolate. Dacă ar putea schimba ceva la experiența actuală, ar vrea o aplicație cu trasee extrem de bine descrise, disponibile offline, cu GPS și coordonate clare, estimări de timp între puncte și posibilitatea de a vedea poziția în timp real față de traseu.
+					</p>
+				</div>
+
+				<!-- Bogdan -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/bogdan1.jpg">
+						<img src="interview/bogdan2.jpg">
+					</div>
+					<h3>Bogdan, 45 ani – București</h3>
+					<p class="role">Technical Support</p>
+					<p class="content-text">
+						Bogdan merge în jur de 10 drumeții pe an, atât cu prietenii apropiați, cât și în cadrul activităților organizate de Asociația Oxygen, unde a avut rolul de coordonator de trasee montane. Planificarea excursiilor se face de obicei prin WhatsApp, iar alegerea traseelor este influențată de timpul disponibil, nivelul grupului, condițiile meteo și complexitatea traseului (pentru care apelează uneori la Salvamont pentru confirmări) .
+					</p>
+					<p class="content-text">
+						În postura de organizator, Bogdan acordă o atenție sporită siguranței: alege trasee accesibile pentru începători și adaptează dificultatea în funcție de cel mai slab membru al grupului. Nu obișnuiește să meargă cu necunoscuți, însă este deschis să încurajeze persoane noi care vor să se inițieze în drumeții.
+					</p>
+					<p class="content-text">
+						Spune că ar merge mai des dacă ar avea mai mult timp și resurse financiare, iar una dintre provocările constante este dificultatea de a găsi trasee apropiate de oraș. 
+					</p>
+					<p class="content-text">
+						Ar aprecia o aplicație care oferă hărți offline cu GPS, comentarii actualizate de la alți drumeți, descrieri detaliate ale traseelor, starea curentă a acestora și o funcționalitate de tip forum pentru comunicare între utilizatori.
+					</p>
+				</div>
+
+				<!-- Dominic -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/dominic1.jpg" alt="Dominic drumeție">
+						<img src="interview/dominic2.jpg" alt="Dominic pe traseu montan">
+					</div>
+					<h3>Dominic, 28 de ani – București</h3>
+					<p class="role">Cloud Delivery Engineer</p>
+					<p class="content-text">
+						Dominic merge frecvent în drumeții, aproximativ de 3-4 ori pe an. El merge atât în România, cât și în străinătate. A explorat trasee precum Poiana Stânei Regale, Crucea Eroilor Caraiman, Sfinxul și Babele, dar și lacurile Rila din Bulgaria. Pentru el, muntele înseamnă liniște și evadare din agitația Bucureștiului.
+					</p>
+					<p class="content-text">
+						De obicei merge cu prieteni și cunoscuți pasionați de munte, iar pentru planificare folosește aplicația <em>Munții Noștri</em>. Totuși, și-ar dori o aplicație care să includă și trasee internaționale, cu profiluri detaliate ale utilizatorilor, pentru a putea merge în drumeții și cu persoane noi, de încredere. De regulă, grupul lui are nevoie de până la două săptămâni pentru a planifica o excursie.
+					</p>
+				</div>
+
+				<!-- Claudiu -->
+				 <div class="interview-card">
+				<div class="interview-images">
+					<img src="interview/claudiu1.jpg">
+					<img src="interview/claudiu2.jpg">
+				</div>
+				<h3>Claudiu, 30 ani – Brașov</h3>
+				<p class="role">Data Analyst</p>
+				<p class="content-text">
+					Claudiu este o persoană spontană, pasionată de natură, dar care în ultimul an nu a mai fost într-o drumeție din lipsa unui grup stabil cu care să meargă. În trecut, obișnuia să participe la excursii organizate de grupul de voluntariat din care făcea parte, unde traseele erau stabilite de fondatorul organizației, iar participanții decideau individual dacă se simt pregătiți pentru ele.
+				</p>
+				<p class="content-text">
+					Cea mai dificilă experiență a fost o drumeție de 8 ore la Piatra Singuratică, care i-a arătat diferențele mari de pregătire și rezistență dintre participanți. În general, Claudiu a mers în drumeții de relaxare, pe trasee scurte, de până la două ore, și nu obișnuiește să investească mult timp în planificare, bazându-se mai mult pe instinct.
+				</p>
+				<p class="content-text">
+					După încheierea perioadei de voluntariat, i-a devenit tot mai greu să găsească parteneri de drumeție și nu știe unde să caute persoane cu același interes. Deși a explorat grupuri de Facebook, nu s-a implicat activ, ci doar a observat discuțiile și a colectat informații. Simte nevoia unei mai bune organizări și și-ar dori să știe dinainte detalii clare despre trasee, durata, dificultatea, echipamentul necesar și zonele de risc. Ar vrea să descopere trasee noi, care să-i redea sentimentul de adrenalină și noutate, și să poată merge alături de persoane apropiate ca vârstă și nivel de experiență.
+				</p>
+				<p class="content-text">
+					Siguranța nu a fost până acum o preocupare principală, dar își dorește ca în viitor excursiile să fie mai bine coordonate și să cunoască din timp oamenii cu care pleacă, pentru a se bucura de experiență în siguranță și cu încredere. Nu are încredere deplină în informațiile de pe Google Maps, pe care le consideră incomplete sau incorecte. Ar fi dispus să plătească în jur de 1,5 euro pe lună pentru o soluție.
+
+				</p>
+			</div>
+
+
+				<!-- Elena -->
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/elena1.jpg">
+						<img src="interview/elena2.jpg">
+					</div>
+					<h3>Elena, 28 de ani – Valea Călugărească</h3>
+					<p class="role">Cloud Delivery Engineer</p>
+					<p class="content-text">
+						Elena este o persoană care adoră natura și peisajele montane, deși până acum nu a avut ocazia să meargă des pe munte (doar de trei ori). Printre traseele parcurse se numără Cheia (alături de colegii de muncă), Babele (cu prieteni apropiați) și Tâmpa. Deși alege traseele adesea spontan, inspirată de postări de pe Instagram sau de la prieteni, își dorește să meargă mult mai des în drumeții.
+					</p>
+					<p class="content-text">
+						Cea mai mare provocare pentru ea și prietenii săi este organizarea: sincronizarea programelor și alegerea traseului. Ar ajuta-o o sursă de încredere unde să găsească trasee potrivite pentru weekenduri spontane.
+					</p>
+				</div>
+				
+			</div>
+
+			<h3 class="subsection-title">Concluzii</h3>
+			<p class="content-text">[TODO]</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Impactul insight-urilor asupra produsului </h2>
+			 <p class="content-text">
+				În urma interviurilor și discuțiilor purtate cu persoanele pasionate de drumeții, am primit mai multe sugestii valoroase care ne-au ajutat să înțelegem mai bine ce își doresc utilizatorii de la o astfel de aplicație și cum putem îmbunătăți experiența lor în TrailMates.
+				Pe baza feedback-ului primit, am decis să luăm în considerare următoarele direcții de dezvoltare:
+			</p>
+
+			<div class="insights-list">
+				<ul>
+					<li><strong>Sistem de rating pentru utilizatori:</strong> Utilizatorii vor putea acorda o notă și lăsa comentarii pentru persoanele cu care au fost în drumeție. Astfel, fiecare profil va avea un rating public, care va contribui la crearea unui mediu de încredere și va ajuta la filtrarea persoanelor nepotrivite.</li>
+					<li><strong>Feedback pentru trasee:</strong> După finalizarea unei drumeții, utilizatorii vor putea evalua traseul, oferind o notă și o recenzie detaliată. Acest lucru va ajuta comunitatea să afle informații actualizate despre starea traseelor, dificultate, peisaj sau condiții meteo specifice.</li>
+					<li><strong>Acces offline la hărți:</strong> Una dintre sugestiile frecvente a fost ca aplicația să poată afișa poziția utilizatorului pe hartă chiar și fără conexiune la internet. Funcționalitatea va permite vizualizarea poziției actuale și a punctelor de interes din jur, folosind semnalul GPS, fără a fi nevoie de date mobile – extrem de utilă în zonele montane fără semnal.</li>
+					<li><strong>Extinderea disponibilității internaționale:</strong> Mai mulți utilizatori și-au exprimat dorința de a folosi aplicația și pentru drumeții în afara României. Vom avea în vedere integrarea unor hărți și trasee internaționale, astfel încât TrailMates să poată fi utilizată și în alte țări.</li>
+					<li><strong>Estimarea timpilor între puncte de interes:</strong> Utilizatorii și-au dorit o estimare mai precisă a timpilor de parcurgere între diferite puncte cheie ale traseului (cabane, vârfuri, refugii etc.), nu doar durata totală. Această funcționalitate îi va ajuta să își gestioneze mai bine ritmul și timpul, pentru a evita situațiile neprevăzute pe munte.</li>
+					<li><strong>Trasee predefinite:</strong> S-a sugerat includerea unei baze de date extinse de trasee montane cunoscute, pe care utilizatorii să le poată selecta direct, fără a fi nevoiți să creeze manual rutele. Aceasta va simplifica procesul de planificare și va oferi inspirație celor care nu au încă experiență în alegerea unui traseu potrivit.</li>
+				</ul>
+			</div>
+
+			<p class="content-text">
+				Aceste insight-uri ne-au ajutat să prioritizăm funcționalitățile cu cel mai mare impact asupra experienței utilizatorilor și să adaptăm viziunea TrailMates pentru a răspunde cât mai fidel nevoilor reale ale comunității montane.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Suntem pregătiți pentru etapa de Customer Validation?</h2>
+			<p class="content-text">
+				Da, suntem pregătiți pentru această etapă deoarece am ajuns la concluziile:
+			</p>
+			<div class="highlight-box">
+				<ul>
+					<li><strong>Problema este reală:</strong> Toți participanții au menționat dificultăți în găsirea partenerilor de drumeție și lipsa unei platforme complete și sigure.</li>
+					<li><strong>Soluția este apreciată:</strong> Utilizatorii au confirmat utilitatea funcțiilor propuse – hărți interactive, profiluri, rating, acces offline.</li>
+					<li><strong>Interes real:</strong> Mulți ar folosi aplicația constant, iar unii ar plăti pentru funcții premium (offline, statistici, recomandări).</li>
+					<li><strong>Produsul a fost îmbunătățit pe baza feedback-ului:</strong> Modul offline, trasee verificate, sistem de rating.</li>
+					<li><strong>Există early adopters:</strong> Dispuși să testeze MVP-ul.</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
 
     <footer>
         <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
