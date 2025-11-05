@@ -356,7 +356,7 @@
 <body>
     <!-- Hero Section -->
     <section class="hero">
-        <h1>🏔️ TrailMates</h1>
+        <img src="images/logo.png" alt="TrailMates Logo" style="height: 80px; margin-left: 100px;">
         <p>Conectează. Explorează. Aventurează-te.</p>
         <p style="font-size: 1.1em; opacity: 0.9;">Aplicația ta pentru organizarea drumețiilor montane și găsirea de parteneri de drumeție</p>
     </section>
@@ -383,6 +383,7 @@
                     <img src="images/ArghirMonica.jpeg" alt="Monica Arghir">
                     <h3>Monica Arghir</h3>
                     <p class="role">PR și Marketing</p>
+					<p class="description">Data Analyst + Marketing si PR - Experiență în analiza datelor de piață și a comportamentului utilizatorilor, precum și în implementarea campaniilor de comunicare și PR bazate pe insight-uri din date.</p>
                     <a href="mailto:marghir4@gmail.com" class="email">marghir4@gmail.com</a>
                 </div>
 
@@ -390,6 +391,7 @@
                     <img src="images/VladimirBucur.jpeg" alt="Vladimir Bucur">
                     <h3>Vladimir Bucur</h3>
                     <p class="role">Developer</p>
+					<p class="description">Software Engineer - Full-stack axat în prezent pe backend C++ pentru sisteme critice și soft pentru echipamente militare securizate.</p>
                     <a href="mailto:vladimirbucur1@gmail.com" class="email">vladimirbucur1@gmail.com</a>
                 </div>
 
@@ -397,6 +399,7 @@
                     <img src="images/AlexandraDragusin.jpg" alt="Alexandra Dragusin">
                     <h3>Alexandra Dragusin</h3>
                     <p class="role">Designer UX/UI</p>
+					<p class="description">Cloud Delivery Engineer + Frontend Developer - Experienta in mentenanta, upgrade si suport pentru infrastructuri cloud si automatizarea diverselor taskuri, dar si in dezvoltarea platformelor web.</p>
                     <a href="mailto:dragusinalexandraaa@gmail.com" class="email">dragusinalexandraaa@gmail.com</a>
                 </div>
 
@@ -404,6 +407,7 @@
                     <img src="images/VioletaComsa.jpg" alt="Violeta Comsa">
                     <h3>Violeta Comsa</h3>
                     <p class="role">Developer</p>
+					<p class="description">Hardware Security Engine SWE - Dezvolt firmware de securitate pentru chipuri NXP bazate pe arhitectura RISC-V și creez teste de validare pentru evaluarea performanței și securității firmware-ului.</p>
                     <a href="mailto:comsa.iulianavioleta@gmail.com" class="email">comsa.iulianavioleta@gmail.com</a>
                 </div>
 
@@ -411,6 +415,7 @@
                     <img src="images/CatalinaSindrilaru.jpeg" alt="Catalina Sindrilaru">
                     <h3>Catalina Sindrilaru</h3>
                     <p class="role">DevOps</p>
+					<p class="description">DevOps Engineer – experiență în administrarea infrastructurii cloud și automatizarea proceselor de deployment. Mă ocup de tot ceea ce ține de funcționarea aplicațiilor și site-urilor web, asigurând stabilitate, scalabilitate și eficiență în mediile de dezvoltare și producție.</p>
                     <a href="mailto:maria.sindrilaru01@gmail.com" class="email">maria.sindrilaru01@gmail.com</a>
                 </div>
 
@@ -418,6 +423,7 @@
                     <img src="images/CatalinStan.jpeg" alt="Catalin Stan">
                     <h3>Catalin Stan</h3>
                     <p class="role">Tester</p>
+					<p class="description">Software Engineer - experiență în dezvoltarea și integrarea de aplicații software. Am lucrat la dezvoltarea de aplicatii backend și full-stack folosind Java, Spring Boot, React și Docker.</p>
                     <a href="mailto:catalinstan114@gmail.com" class="email">catalinstan114@gmail.com</a>
                 </div>
             </div>
@@ -498,6 +504,14 @@
                 </div>
             </div>
 
+			<div style="display: flex; flex-direction: column; gap: 40px; margin-top: 40px; max-width: 1100px; margin-left: auto; margin-right: auto;">
+				<div style="text-align: center;">
+					<img src="images/Comparatie_concurenta.png" alt="Comparatie Concurenta" style="max-width: 75%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+					<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600;">Funcționalități ale competitorilor în raport cu TrailMates</p>
+					<p style="font-size: 0.9em; color: #666;">Tabel comparativ în care se evidențiază cu ce se diferențiază și cu ce vine în plus platforma propusă</p>
+				</div>
+			</div>
+
             <div class="highlight-box" style="margin-top: 40px;">
                 <h3>Avantajul nostru competitiv</h3>
                 <p style="margin-bottom: 15px; font-size: 1.1em;">
@@ -574,26 +588,75 @@
             </div>
         </section>
 
-        <!-- Cost Structure Section -->
-        <section class="section">
-            <h2 class="section-title">Structura de costuri</h2>
-            
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Dezvoltare & Tehnologie</h3>
-                    <p>• Hosting și infrastructură cloud<br>
-                       • API-uri externe (hărți, imagini)<br>
-                       • Domenii și certificate SSL</p>
-                </div>
+		<!-- Cost Structure Section -->
+		<section class="section">
+			<h2 class="section-title">Structura de costuri</h2>
 
-                <div class="feature-card">
-                    <h3>Marketing & Achiziție</h3>
-                    <p>• Campanii publicitare (Google, Facebook, Instagram)<br>
-                       • SEO și content marketing<br>
-                       • Colaborări cu influenceri outdoor</p>
-                </div>
-            </div>
-        </section>
+			<div style="display: flex; flex-direction: column; gap: 30px; margin: 0 auto;">
+				<div class="feature-card">
+					<h3>API-ul Mapy.cz</h3>
+					<p>
+						Aplicația utilizează API-ul Mapy.cz (<a href="https://developer.mapy.com/pricing/" target="_blank">https://developer.mapy.com/pricing/</a>) 
+						pentru afișarea hărților, rutare și căutări de locații. Serviciul oferă un plan gratuit de 10 milioane de credite pe lună (tariful Extended), 
+						suficient pentru câteva mii de utilizatori activi zilnic. Fiecare apel API are un cost diferit în credite — de exemplu, descărcarea unei tile de hartă consumă 1 credit, 
+						o rută planificată sau o căutare de adresă 4 credite, iar funcții mai complexe, precum calculul unui traseu matricial 10×10, pot ajunge la 40 de credite per cerere.
+					</p>
+					<p>
+						După depășirea pragului gratuit, costul este progresiv descrescător: prețul scade de la 1.6 CZK / 1.000 credite la volume mici 
+						până la 0.2 CZK / 1.000 credite pentru trafic mare (peste 100 milioane de credite). În practică:
+					</p>
+					<ul style="padding-left: 40px; color: #666;">
+						<li>Până la 10.000 de utilizatori activi zilnic → consum ~17 milioane credite/lună (~10.600 CZK/lună, ~425 €/an)</li>
+						<li>50.000 de utilizatori activi → consum ~44.600 CZK/lună (~1.780 €/an)</li>
+					</ul>
+					<p>Astfel, costul anual pentru API-ul Mapy.cz poate varia între 0 € și aproximativ 400–1.800 €, în funcție de numărul de utilizatori și frecvența utilizării.</p>
+				</div>
+
+				<!-- Grafic API Mapy.cz -->
+				<div style="text-align: center;">
+					<img src="images/Cost_Mapy.png" alt="Cost anual API Mapy.cz" style="max-width: 43%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+					<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600;">Cost anual API Mapy.cz</p>
+				</div>
+
+				<div class="feature-card">
+					<h3>Infrastructură</h3>
+					<p>
+						Pentru infrastructura aplicației, cea mai accesibilă soluție este Hetzner Cloud, care oferă performanță bună la costuri reduse. 
+						Un server cu 4 CPU și 8 GB RAM, suficient pentru aproximativ 100 de utilizatori activi pe zi, costă în jur de 5 €/lună (~60 €/an). 
+						Pe măsură ce aplicația crește, este necesară o scalare proporțională a resurselor — de exemplu, pentru ~5.000 de utilizatori pe zi, 
+						un server dedicat extins costă 15–20 €/lună (~180–240 €/an). În cazul unei creșteri semnificative, se pot adăuga instanțe suplimentare sau un load balancer, 
+						însă costurile rămân reduse comparativ cu alți provideri cloud.
+					</p>
+				</div>
+
+				<!-- Grafic Infrastructură Hetzner -->
+				<div style="text-align: center;">
+					<img src="images/Cost_Hetzner.png" alt="Cost anual infrastructură Hetzner" style="max-width: 43%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+					<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600;">Cost anual infrastructură Hetzner</p>
+				</div>
+
+				<div class="feature-card">
+					<h3>Domeniu</h3>
+					<p>Costul anual pentru achiziția și menținerea unui domeniu este de aproximativ 15 €.</p>
+				</div>
+
+				<div class="feature-card">
+					<h3>Marketing & Achiziție</h3>
+					<p>Activitățile de marketing și promovare includ:</p>
+					<ul style="padding-left: 40px; color: #666;">
+						<li>Social media organică (Facebook, Instagram, TikTok)</li>
+						<li>Colaborări cu micro-influenceri</li>
+						<li>SEO și content marketing intern</li>
+						<li>Reclame plătite targetate cu buget redus</li>
+					</ul>
+					<p>Estimarea costurilor pentru aceste activități:</p>
+					<ul style="padding-left: 40px; color: #666;">
+						<li>Minimal: 50–150 €/lună (social media + micro-influenceri + content intern)</li>
+						<li>Moderată: 200–300 €/lună (include și reclame plătite)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
         <!-- Revenue Streams Section -->
         <section class="section">
