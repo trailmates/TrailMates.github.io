@@ -367,6 +367,7 @@
         <div class="milestone-buttons">
             <a href="#milestone1">Milestone 1</a>
             <a href="#milestone2">Milestone 2</a>
+			<a href="#milestone3">Milestone 3</a>
             <!-- <a href="#milestone3">📈 Milestone 3</a> -->
         </div>
     </section>
@@ -1150,11 +1151,61 @@
 			</div>
 		</section>
 	</div>
+	<!-- AICI vii tu cu noul cod -->
+  <!-- ===== Milestone 3 ===== -->
+  <h2 class="section-title" id="milestone3">Milestone 3</h2>
+  <div class="container">
+    <!-- Subsecțiunea Mock Up -->
+    <section class="section" id="mockup">
+      <h3 class="subsection-title">Mock Up</h3>
+      <div class="mockup-grid" id="mockupGrid"></div>
+    </section>
+
+    <!-- Subsecțiunea LandingPage -->
+    <section class="section" id="landingpage">
+      <h3 class="subsection-title">LandingPage</h3>
+      <p class="subsection-note">
+        Aici vei adăuga ulterior linkul către GitHub Pages.<br>
+        <!-- exemplu:
+        <a href="https://trailmates.github.io/IAS-TrailMates/" target="_blank">Vezi Landing Page</a>
+        -->
+      </p>
+    </section>
+  </div>
+	
 
 
-    <footer>
-        <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
-        <p style="margin-top: 10px; opacity: 0.8;">Construim viitorul drumeției montane în România</p>
-    </footer>
+    <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
+  </footer>
+
+  <!-- Scripturile (TOATE) se pun înainte de închiderea body-ului -->
+  <script>
+    // activează scroll lin (opțional)
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    // lista ta de imagini din folderul mockup
+    const mockupImages = [
+      "WhatsApp Image 2025-11-12 at 09.28.22.jpeg",
+      "WhatsApp Image 2025-11-12 at 09.28.43.jpeg",
+      "WhatsApp Image 2025-11-12 at 09.29.04.jpeg",
+      "WhatsApp Image 2025-11-12 at 09.29.19.jpeg",
+      "WhatsApp Image 2025-11-12 at 09.29.48.jpeg",
+      "WhatsApp Image 2025-11-12 at 09.30.21.jpeg"
+    ];
+
+    const grid = document.getElementById('mockupGrid');
+    mockupImages.forEach(name => {
+      const item = document.createElement('div');
+      item.className = 'mockup-item';
+      const img = document.createElement('img');
+      img.src = encodeURI(`mockup/${name}`); // gestionează spațiile din nume
+      img.alt = name;
+      img.addEventListener('error', () => item.remove());
+      item.appendChild(img);
+      grid.appendChild(item);
+    });
+  </script>
 </body>
 </html>
