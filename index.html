@@ -1162,50 +1162,64 @@
     </section>
 
     <!-- Subsecțiunea LandingPage -->
-    <section class="section" id="landingpage">
-      <h3 class="subsection-title">LandingPage</h3>
-      <p class="subsection-note">
-        Aici vei adăuga ulterior linkul către GitHub Pages.<br>
-        <!-- exemplu:
-        <a href="https://trailmates.github.io/IAS-TrailMates/" target="_blank">Vezi Landing Page</a>
-        -->
-      </p>
-    </section>
+    <!-- Subsecțiunea LandingPage -->
+<section class="section" id="landingpage">
+  <h3 class="subsection-title">LandingPage</h3>
+  <div class="mockup-grid" id="landingGrid"></div>
+</section>
+
   </div>
 	
 
 
     <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
-  </footer>
+        <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Construim viitorul drumeției montane în România</p>
+    </footer>
 
   <!-- Scripturile (TOATE) se pun înainte de închiderea body-ului -->
   <script>
-    // activează scroll lin (opțional)
-    document.documentElement.style.scrollBehavior = 'smooth';
+  document.documentElement.style.scrollBehavior = 'smooth';
 
-    // lista ta de imagini din folderul mockup
-    const mockupImages = [
-      "WhatsApp Image 2025-11-12 at 09.28.22.jpeg",
-      "WhatsApp Image 2025-11-12 at 09.28.43.jpeg",
-      "WhatsApp Image 2025-11-12 at 09.29.04.jpeg",
-      "WhatsApp Image 2025-11-12 at 09.29.19.jpeg",
-      "WhatsApp Image 2025-11-12 at 09.29.48.jpeg",
-      "WhatsApp Image 2025-11-12 at 09.30.21.jpeg"
-    ];
+  // Mock Up (există deja la tine)
+  const mockupImages = [
+    "WhatsApp Image 2025-11-12 at 09.28.22.jpeg",
+    "WhatsApp Image 2025-11-12 at 09.28.43.jpeg",
+    "WhatsApp Image 2025-11-12 at 09.29.04.jpeg",
+    "WhatsApp Image 2025-11-12 at 09.29.19.jpeg",
+    "WhatsApp Image 2025-11-12 at 09.29.48.jpeg",
+    "WhatsApp Image 2025-11-12 at 09.30.21.jpeg"
+  ];
+  const grid = document.getElementById('mockupGrid');
+  mockupImages.forEach(name => {
+    const item = document.createElement('div');
+    item.className = 'mockup-item';
+    const img = document.createElement('img');
+    img.src = encodeURI(`mockup/${name}`);
+    img.alt = name;
+    img.addEventListener('error', () => item.remove());
+    item.appendChild(img);
+    grid.appendChild(item);
+  });
 
-    const grid = document.getElementById('mockupGrid');
-    mockupImages.forEach(name => {
-      const item = document.createElement('div');
-      item.className = 'mockup-item';
-      const img = document.createElement('img');
-      img.src = encodeURI(`mockup/${name}`); // gestionează spațiile din nume
-      img.alt = name;
-      img.addEventListener('error', () => item.remove());
-      item.appendChild(img);
-      grid.appendChild(item);
-    });
-  </script>
+  // 🔥 LandingPage – pozele tale din folderul /landingpage
+  const landingImages = [
+    "landingpage1.jpeg",
+    "landingpage2.jpeg"
+  ];
+  const landingGrid = document.getElementById('landingGrid');
+  landingImages.forEach(name => {
+    const item = document.createElement('div');
+    item.className = 'mockup-item';
+    const img = document.createElement('img');
+    img.src = `landingpage/${name}`;
+    img.alt = name;
+    img.addEventListener('error', () => item.remove());
+    item.appendChild(img);
+    landingGrid.appendChild(item);
+  });
+</script>
+
 </body>
 </html>
