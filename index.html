@@ -351,7 +351,8 @@
           grid-template-columns: 1fr;
         }
       }
-      /* === butonul de demo de la secțiunea LandingPage === */
+      
+	  /* === butonul de demo de la secțiunea LandingPage === */
       .demo-link {
         display: inline-block;
         margin-top: 8px;
@@ -368,7 +369,8 @@
         color: #fff;
         transform: translateY(-1px);
       }
-      /* === Buton Vezi LandingPage === */
+      
+	  /* === Buton Vezi LandingPage === */
       .demo-link {
         display: inline-block;
         margin: 15px auto 25px;
@@ -391,6 +393,779 @@
       #landingpage .demo-link {
         margin: 12px 0 25px 0;
       }
+
+      .mockup-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 25px;
+        margin-top: 25px;
+        justify-items: center;
+      }
+
+      .mockup-item {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .mockup-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        object-fit: cover;
+      }
+
+	  .persona-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 30px;
+		align-items: start;
+		margin-top: 20px;
+	  }
+
+	  .persona-photo img {
+		width: 100%;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      }
+
+	  .userflow-wrapper {
+		width: 1000px;
+		margin-top: 40px;
+		position: relative;
+	  }
+
+	  .userflow-wrapper img {
+		width: 100%;
+		height: auto;
+		display: block;
+	   }
+
+
+	   .persona-card {
+		background: white;
+		border-radius: 15px;
+		padding: 30px;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		border-left: 5px solid #97c680;
+		margin-top: 20px;
+	}
+
+	.persona-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid #f0f8f0;
+	}
+
+	.persona-main-info h4 {
+		font-size: 1.8em;
+		color: #2c5f2d;
+		margin-bottom: 5px;
+	}
+
+	.persona-role {
+		color: #666;
+		font-size: 1.1em;
+		margin-bottom: 8px;
+	}
+
+	.persona-tagline {
+		color: #97c680;
+		font-style: italic;
+		font-weight: 500;
+	}
+
+	.persona-stats {
+		display: flex;
+		gap: 20px;
+	}
+
+	.stat-item {
+		text-align: center;
+		background: #f0f8f0;
+		padding: 15px;
+		border-radius: 10px;
+		min-width: 80px;
+	}
+
+	.stat-value {
+		display: block;
+		font-size: 1.8em;
+		font-weight: bold;
+		color: #2c5f2d;
+	}
+
+	.stat-label {
+		font-size: 0.9em;
+		color: #666;
+	}
+
+	.persona-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+	}
+
+	.detail-section {
+		margin-bottom: 30px;
+	}
+
+	.detail-title {
+		font-size: 1.3em;
+		color: #2c5f2d;
+		margin-bottom: 15px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.detail-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 12px;
+	}
+
+	.detail-item {
+		padding: 8px 0;
+		border-bottom: 1px solid #f5f5f5;
+	}
+
+	.highlight-list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.highlight-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 10px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		transition: background-color 0.3s ease;
+	}
+
+	.highlight-item:hover {
+		background: #f0f8f0;
+	}
+
+	.highlight-icon {
+		font-size: 1.2em;
+	}
+
+	.behavior-content p {
+		margin-bottom: 15px;
+	}
+
+	.tools-used {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.tool-tag {
+		background: #e8f4e8;
+		color: #2c5f2d;
+		padding: 5px 12px;
+		border-radius: 20px;
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+
+	.persona-visual {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.persona-image-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+	}
+
+	.image-container {
+		background: #f9f9f9;
+		border-radius: 10px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.image-container img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.pain-points-list {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.pain-point {
+		display: flex;
+		gap: 12px;
+		padding: 15px;
+		background: #fff5f5;
+		border-radius: 10px;
+		border-left: 4px solid #ff6b6b;
+	}
+
+	.pain-icon {
+		font-size: 1.2em;
+		margin-top: 2px;
+	}
+
+	.pain-point strong {
+		color: #d63031;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.pain-point p {
+		color: #666;
+		font-size: 0.95em;
+		margin: 0;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.persona-header {
+			flex-direction: column;
+			gap: 20px;
+		}
+		
+		.persona-content {
+			grid-template-columns: 1fr;
+		}
+		
+		.detail-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.persona-image-section {
+			grid-template-columns: 1fr;
+		}
+		
+		.persona-stats {
+			justify-content: center;
+		}
+	}
+
+	.stories-intro {
+		margin-bottom: 20px;
+		color: #666;
+		font-style: italic;
+	}
+
+	.stories-intro p {
+		margin: 0;
+	}
+
+	.flow-intro {
+		background: #f0f8f0;
+		padding: 20px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		border-left: 4px solid #97c680;
+	}
+
+	.flow-intro p {
+		margin: 0;
+		font-size: 1.1em;
+		line-height: 1.6;
+	}
+
+	.flow-diagram-container {
+		background: white;
+		padding: 25px;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.flow-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.flow-steps {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.flow-step {
+		background: white;
+		border-radius: 12px;
+		padding: 25px;
+		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+		border-left: 5px solid #97c680;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.flow-step:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+	}
+
+	.step-header {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-bottom: 15px;
+	}
+
+	.step-number {
+		background: #2c5f2d;
+		color: white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+	.step-title {
+		color: #2c5f2d;
+		margin: 0;
+		font-size: 1.4em;
+	}
+
+	.step-description {
+		color: #666;
+		font-style: italic;
+		margin-bottom: 20px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.step-actions {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.action-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 10px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		transition: background-color 0.3s ease;
+	}
+
+	.action-item:hover {
+		background: #f0f8f0;
+	}
+
+	.action-icon {
+		font-size: 1.2em;
+	}
+
+	/* Feature Grid */
+	.step-features {
+		margin-top: 15px;
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 15px;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 12px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		border-left: 3px solid #97c680;
+	}
+
+	.feature-icon {
+		font-size: 1.3em;
+	}
+
+	.feature-item strong {
+		color: #2c5f2d;
+		display: block;
+		margin-bottom: 2px;
+	}
+
+	.feature-item span {
+		color: #666;
+		font-size: 0.9em;
+	}
+
+	/* Trail Info */
+	.trail-info {
+		margin-bottom: 20px;
+	}
+
+	.info-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.info-tag {
+		background: #e8f4e8;
+		color: #2c5f2d;
+		padding: 6px 12px;
+		border-radius: 20px;
+		font-size: 0.9em;
+		font-weight: 500;
+	}
+
+	/* Profile Sections */
+	.profile-sections {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 15px;
+	}
+
+	.profile-section {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 12px;
+		background: #f9f9f9;
+		border-radius: 8px;
+	}
+
+	.section-icon {
+		font-size: 1.3em;
+	}
+
+	.profile-section strong {
+		color: #2c5f2d;
+		display: block;
+		margin-bottom: 2px;
+	}
+
+	.profile-section span {
+		color: #666;
+		font-size: 0.9em;
+	}
+
+	/* Creation Features */
+	.creation-features {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.creation-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 12px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		border-left: 3px solid #97c680;
+	}
+
+	.creation-icon {
+		font-size: 1.3em;
+	}
+
+	.creation-item strong {
+		color: #2c5f2d;
+		display: block;
+		margin-bottom: 2px;
+	}
+
+	.creation-item span {
+		color: #666;
+		font-size: 0.9em;
+	}
+
+	/* Modal Grid */
+	.modal-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
+	}
+
+	.modal-item {
+		display: flex;
+		gap: 15px;
+		padding: 20px;
+		background: #f9f9f9;
+		border-radius: 10px;
+		transition: transform 0.3s ease;
+	}
+
+	.modal-item:hover {
+		transform: translateY(-2px);
+	}
+
+	.modal-icon {
+		font-size: 2em;
+		margin-top: 5px;
+	}
+
+	.modal-content strong {
+		color: #2c5f2d;
+		display: block;
+		margin-bottom: 5px;
+		font-size: 1.1em;
+	}
+
+	.modal-content p {
+		color: #666;
+		margin: 0;
+		font-size: 0.95em;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.flow-step {
+			padding: 20px;
+		}
+		
+		.feature-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.profile-sections {
+			grid-template-columns: 1fr;
+		}
+		
+		.modal-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.step-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+		}
+	}
+
+	.conclusion-card {
+		background: white;
+		border-radius: 15px;
+		padding: 30px;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		border-left: 5px solid #2c5f2d;
+		margin-top: 20px;
+	}
+
+	.conclusion-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 25px;
+		padding-bottom: 15px;
+		border-bottom: 2px solid #f0f8f0;
+	}
+
+	.conclusion-header h4 {
+		color: #2c5f2d;
+		margin: 0;
+		font-size: 1.6em;
+	}
+
+	.validation-badge {
+		background: #2c5f2d;
+		color: white;
+		padding: 8px 16px;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+
+	.insight-highlight {
+		display: flex;
+		gap: 20px;
+		background: #f0f8f0;
+		padding: 25px;
+		border-radius: 12px;
+		margin-bottom: 30px;
+		border-left: 4px solid #97c680;
+	}
+
+	.insight-icon {
+		font-size: 2.5em;
+		margin-top: 5px;
+	}
+
+	.insight-text h5 {
+		color: #2c5f2d;
+		margin: 0 0 10px 0;
+		font-size: 1.3em;
+	}
+
+	.insight-text p {
+		color: #555;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.validation-points {
+		margin-bottom: 30px;
+	}
+
+	.validation-points h5 {
+		color: #2c5f2d;
+		margin-bottom: 15px;
+		font-size: 1.2em;
+	}
+
+	.validation-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 12px;
+	}
+
+	.validation-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 10px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		transition: background-color 0.3s ease;
+	}
+
+	.validation-item:hover {
+		background: #f0f8f0;
+	}
+
+	.check-icon {
+		color: #2c5f2d;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+
+	.user-quotes {
+		margin-bottom: 30px;
+	}
+
+	.user-quotes h5 {
+		color: #2c5f2d;
+		margin-bottom: 20px;
+		font-size: 1.2em;
+	}
+
+	.quote-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	.quote-item {
+		background: #f9f9f9;
+		padding: 20px;
+		border-radius: 10px;
+		border-left: 4px solid #97c680;
+	}
+
+	.quote-text {
+		font-style: italic;
+		color: #555;
+		line-height: 1.6;
+		margin-bottom: 10px;
+	}
+
+	.quote-author {
+		color: #2c5f2d;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+
+	.next-steps h5 {
+		color: #2c5f2d;
+		margin-bottom: 20px;
+		font-size: 1.2em;
+	}
+
+	.steps-list {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.step-item {
+		display: flex;
+		gap: 15px;
+		padding: 15px;
+		background: #f9f9f9;
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+	}
+
+	.step-item:hover {
+		transform: translateX(5px);
+	}
+
+	.step-number {
+		background: #2c5f2d;
+		color: white;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 0.9em;
+		flex-shrink: 0;
+	}
+
+	.step-content strong {
+		color: #2c5f2d;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.step-content p {
+		color: #666;
+		margin: 0;
+		font-size: 0.95em;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.conclusion-header {
+			flex-direction: column;
+			gap: 15px;
+			text-align: center;
+		}
+		
+		.insight-highlight {
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		.validation-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.quote-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.step-item {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
     </style>
   </head>
   <body>
@@ -415,7 +1190,7 @@
         <a href="#milestone1">Milestone 1</a>
         <a href="#milestone2">Milestone 2</a>
         <a href="#milestone3">Milestone 3</a>
-        <!-- <a href="#milestone3">📈 Milestone 3</a> -->
+        <a href="#milestone4">Milestone 4</a>
       </div>
     </section>
 
@@ -1808,13 +2583,23 @@
           </ul>
         </div>
       </section>
+
+
+
     </div>
-    <!-- ===== Milestone 3 ===== -->
-    <h2 class="section-title" id="milestone3">Milestone 3</h2>
+
+	<h2 class="section-title" id="milestone3">Milestone 3</h2>
     <div class="container">
       <section class="section" id="mockup">
         <h3 class="subsection-title">Mock Up</h3>
-        <div class="mockup-grid" id="mockupGrid"></div>
+         <div class="mockup-grid">
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.28.22.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.28.43.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.29.04.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.29.19.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.29.48.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="mockup/WhatsApp Image 2025-11-12 at 09.30.21.jpeg" alt=""></div>
+		</div>
       </section>
 
       <section class="section" id="landingpage">
@@ -1829,9 +2614,610 @@
           Vezi LandingPage
         </a>
 
-        <div class="mockup-grid" id="landingGrid"></div>
+        <div class="mockup-grid">
+			<div class="mockup-item"><img src="landingpage/landingpage1.jpeg" alt=""></div>
+			<div class="mockup-item"><img src="landingpage/landingpage2.jpeg" alt=""></div>
+		</div>
       </section>
     </div>
+
+	<h2 class="section-title" id="milestone4">Milestone 4</h2>
+	<div class="container">
+		<section class="section">
+			<h3 class="subsection-title">Interviuri cu potențiali utilizatori</h3>
+
+			<div class="interviews-grid">
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/petra1.jpg" alt="Tudor Petracovi">
+						<img src="interview/petra2.jpg" alt="Tudor Petracovi">
+					</div>
+					<h3>Tudor Petracovi, 23 ani – București</h3>
+					<p class="role">Student la Automatică, Software Engineer</p>
+					<p class="content-text">
+						Tudor este este pasionat de mersul la munte, însă reușește să ajungă doar de 2–3 ori pe an. Principala barieră pe care o întâmpină este lipsa partenerilor de drumeție: are un cerc social relativ restrâns și puțini prieteni dispuși să meargă constant cu el, mai ales pe trasee dificile sau în sezonul rece. Deși ar vrea să iasă mult mai des, se lovește de faptul că nu are cu cine, în special atunci când vine vorba de ture mai tehnice sau pe timp de iarnă.
+					<p class="content-text">
+						Experiențele sale anterioare arată însă că este deschis să meargă și cu persoane necunoscute. A participat deja la o astfel de ieșire și s-a simțit confortabil, iar o altă experiență pozitivă a fost o tură de iarnă organizată de o școală de ghizi montani, la care i-a plăcut foarte mult. Cu toate acestea, nu simte nevoia ca toate ieșirile să fie cu oameni foarte experimentați — este dispus să meargă și cu persoane de nivel similar.
+					</p>
+					<p class="content-text">
+						Pentru inspirație și oportunități noi, urmărește pe Instagram pagina Retezat Summer Camp, unde a fost tentat de mai multe ori să se înscrie la ture și intenționează să participe în viitor. În pregătirea traseelor, se documentează folosind aplicația Munții Noștri și alte platforme care listează rute populare din zona în care vrea să meargă.
+					</p>
+				</div>
+				
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/alex1.png" alt="Alex">
+						<img src="interview/alex2.png" alt="Alex">
+					</div>
+					<h3>Alex, 32 ani – Brașov</h3>
+					<p class="role">Student la Automatică, Software Engineer</p>
+					<p class="content-text">
+						Alex este pasionat de drumetii montante de aproape un deceniu. Merge pe munte în jur de 10 ori pe an, iar pentru el fiecare traseu reprezinta un mix perfect intre adrenalina, explorare și bondingul cu grupul alături de care porneste in aventura. Deși are un grup stabil de prieteni cu care merge de obicei, format prin grupuri de WhatsApp, simte din ce în ce mai des ca si-ar dori sa își extindă cercul cu oameni cu care poate călători; parteneri de drumetie mai compatibili ca ritm, nivel de experiența și vibe. 					</p>
+					<p class="content-text">
+						Alex folosește în prezent aplicații precum Munții Noștri și Mapy pentru a vizualiza trasee și pentru orientare, însă nu de puține ori se abate de la traseele clasice pentru a cauta rute mai wild, portiuni nemarcate sau perspective care ii cresc doza de adrenalina. Este genul de drumet care iubește libertatea, dar totodată apreciază și siguranța, mai ales ca a avut experiențe în care s-a trezit în zone mai puțin circulate sau greu de interpretat pe harta.
+					</p>
+					<p class="content-text">
+						Printre aventurile sale favorite se numără Varful Retezat, dar și Tre Cime di Lavaredo.
+					</p>
+					<p class="content-text">
+						Nevoile sale se axează pe posibilitatea de înscriere în trasee create de alții și găsirea oamenilor potriviți, folosirea unor hărți interactive ca sa vizualizeze potențialele deviații, refugii sau puncte de interes, dar și crearea propriilor trasee. 
+					</p>
+					
+				</div>
+
+				<div class="interview-card">
+					<div class="interview-images">
+						<img src="interview/claudiu3.jpg" alt="Claudiu">
+					</div>
+					<h3>Claudiu, 30 ani – București</h3>
+					<p class="role">Software Developer</p>
+					<p class="content-text">
+						Claudiu consideră că faptul că locuiește în București îi afectează puternic starea fizică și psihică. Poluarea, ritmul haotic și lipsa timpului îl motivează și mai mult să caute ieșiri la munte pentru relaxare și reconectare cu natura. Drumețiile reprezintă pentru el un mod de a scăpa de agitația orașului și o dorință clară de mișcare într-un mediu natural.
+					</p>
+					<p class="content-text">
+						A pierdut încrederea în acuratețea informațiilor de pe Google și alte platforme, după mai multe situații problematice. A rezervat cazare la o cabană printr-un site pe care îl credea oficial, dar era fals. A aflat abia la fața locului că rezervările se fac doar printr-un număr de telefon găsit pe Facebook. Hărțile online ofereau indicații diferite (Google Maps vs. Waze) privind începutul traseelor. Informațiile despre vreme erau contradictorii între platforme, iar realitatea din teren nu corespundea adesea cu ce citise online.
+					</p>
+					<p class="content-text">
+						În trecut, mergea cu un grup numeros și foarte eterogen (18–40 de ani). Deși exista diversitate și a cunoscut oameni cu care a legat prietenii, au apărut două probleme majore. Diferențe mari de experiență și pregătire fizică între participanți. Alegerea incorectă a echipamentului de către unii membri (încălțăminte, rucsac, îmbrăcăminte), ceea ce îngreuna întreg traseul și afecta ritmul grupului.
+					</p>
+					<p class="content-text">
+						Claudiu și-ar dori să cunoască oameni care împărtășesc aceeași pasiune și să intre într-un grup stabil și de încredere. Consideră că experiența este mai plăcută în grupuri mari, unde socializarea este naturală și atmosfera devine „mai fun”.
+					</p>
+					<p class="content-text">
+						Pentru a avea încredere într-o aplicație, consideră esențial. Un sistem de verificare a identității (tip Revolut), pentru a evita interacțiunea cu persoane care ar putea falsifica date precum sexul sau vârsta. Un mediu sigur, controlat, în care să știe că ceilalți participanți sunt persoane reale.
+					</p>
+					<p class="content-text">
+						Si-ar dori sa aibă următoarele functionalitati într-o aplicație: group chat pentru organizare, socializare și crearea unei comunități reale; un feed / wall unde utilizatorii să posteze drumețiile, să eticheteze locațiile și persoanele, să vadă unde au mers alții și să se inspire.; informații centralizate despre trasee: nivel, durată, echipament necesar, vreme, dar și detalii mai rare precum tipurile de animale din zonă, informații greu de găsit în prezent; acces rapid, prin căutare, la toate informațiile despre o anumită locație.
+					</p>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h3 class="subsection-title">User Persona — Andrei Popescu</h3>
+			
+			<div class="persona-card">
+				<div class="persona-header">
+					<div class="persona-main-info">
+						<h4>Andrei Popescu</h4>
+						<p class="persona-role">Software Developer • 28 ani • Cluj-Napoca</p>
+						<p class="persona-tagline">Drumeț pasionat care caută parteneri de aventură</p>
+					</div>
+					<div class="persona-stats">
+						<div class="stat-item">
+							<span class="stat-value">1-2</span>
+							<span class="stat-label">drumeții/lună</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-value">3+</span>
+							<span class="stat-label">ani experiență</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="persona-content">
+					<div class="persona-details">
+						<div class="detail-section">
+							<h5 class="detail-title">Demografice</h5>
+							<div class="detail-grid">
+								<div class="detail-item">
+									<strong>Vârstă:</strong> 28 de ani
+								</div>
+								<div class="detail-item">
+									<strong>Locație:</strong> Cluj-Napoca
+								</div>
+								<div class="detail-item">
+									<strong>Job:</strong> Software Developer
+								</div>
+								<div class="detail-item">
+									<strong>Educație:</strong> Studii superioare în IT
+								</div>
+								<div class="detail-item">
+									<strong>Venit:</strong> Mediu–ridicat
+								</div>
+							</div>
+						</div>
+
+						 <div class="detail-section">
+							<h5 class="detail-title">Context și Background</h5>
+							<div class="background-content">
+								<div class="background-item">
+									<div>
+										<strong>Locuiește într-un oraș mare</strong>
+										<p>Lucrează în format hibrid și are flexibilitate pentru activități outdoor</p>
+									</div>
+								</div>
+								<div class="background-item">
+									<div>
+										<strong>Pasionat de natură și drumeții</strong>
+										<p>Merge la munte doar 1–2 ori pe lună din cauza lipsei partenerilor</p>
+									</div>
+								</div>
+								<div class="background-item">
+									<div>
+										<strong>Prietenii nu sunt mereu disponibili</strong>
+										<p>Caută alternative mai flexibile pentru a-și satisface pasiunea</p>
+									</div>
+								</div>
+								<div class="background-item">
+									<div>
+										<strong>Experiență moderată în drumeții</strong>
+										<p>Cunoaște marcajele și folosește hărți pentru navigare</p>
+									</div>
+								</div>
+								<div class="background-item">
+									<div>
+										<strong>Preferă soluții digitale intuitive</strong>
+										<p>Folosește aplicații pentru planificare, navigare și descoperirea traseelor</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="detail-section">
+							<h5 class="detail-title">Obiective și Motivații</h5>
+							<div class="objectives-grid">
+								<div class="objective-column">
+									<h6>Obiective</h6>
+									<div class="highlight-list">
+										<div class="highlight-item">
+											<span class="highlight-icon">👥</span>
+											<span>Găsirea parteneri compatibili ca nivel și disponibilitate</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">🗺️</span>
+											<span>Identificarea traseelor potrivite experienței sale</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">📅</span>
+											<span>Planificare centralizată într-un singur loc</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">🚀</span>
+											<span>Participare mai frecventă la ture</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">🤝</span>
+											<span>Devenirea parte dintr-o comunitate montană</span>
+										</div>
+									</div>
+								</div>
+								<div class="objective-column">
+									<h6>Motivații</h6>
+									<div class="highlight-list">
+										<div class="highlight-item">
+											<span class="highlight-icon">🛡️</span>
+											<span>Siguranță sporită prin drumeții în grup</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">💬</span>
+											<span>Socializare cu oameni cu aceleași interese</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">✅</span>
+											<span>Încredere în informații actualizate și verificate</span>
+										</div>
+										<div class="highlight-item">
+											<span class="highlight-icon">📊</span>
+											<span>Organizare centralizată (hărți, trasee, oameni, recenzii)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="persona-visual">
+						<div class="persona-image-section">
+							<div class="image-container">
+								<img src="persona/persona1.png" alt="Andrei Popescu - User Persona">
+							</div>
+							<div class="image-container">
+								<img src="persona/persona2.png" alt="Andrei Popescu - Drumeții">
+							</div>
+						</div>
+						
+						<div class="detail-section">
+							<h5 class="detail-title">Comportament</h5>
+							<div class="behavior-content">
+								<div class="behavior-item">
+									<strong>Căutare trasee:</strong> Google, bloguri, AllTrails, Strava, Komoot
+								</div>
+								<div class="behavior-item">
+									<strong>Activ în:</strong> Grupuri Facebook, dar fără încredere totală în necunoscuți
+								</div>
+								<div class="behavior-item">
+									<strong>Preferințe tehnice:</strong> Aplicații cu hărți interactive și tracking
+								</div>
+								<div class="behavior-item">
+									<strong>Consumă conținut:</strong> Video, reels, articole outdoor pentru inspirație
+								</div>
+								<div class="behavior-item">
+									<strong>Verifică:</strong> Ratinguri, comentarii, profiluri reale și verificate
+								</div>
+								<div class="behavior-item">
+									<strong>Evită:</strong> Ture fără informații clare despre organizator și traseu
+								</div>
+								
+								<div class="tools-used">
+									<h6>Aplicații folosite:</h6>
+									<div class="tools-grid">
+										<span class="tool-tag">AllTrails</span>
+										<span class="tool-tag">Strava</span>
+										<span class="tool-tag">Komoot</span>
+										<span class="tool-tag">Munții Noștri</span>
+										<span class="tool-tag">Mapy.cz</span>
+										<span class="tool-tag">Google Maps</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pain-points">
+							<h5 class="detail-title">Probleme și Provocări</h5>
+							<div class="pain-points-list">
+								<div class="pain-point">
+									<div>
+										<strong>Lipsa partenerilor disponibili</strong>
+										<p>Nu găsește ușor parteneri în aceeași perioadă</p>
+									</div>
+								</div>
+								<div class="pain-point">
+									<div>
+										<strong>Grupuri dezorganizate</strong>
+										<p>Platforme precum Facebook sunt haotice și lipsite de siguranță</p>
+									</div>
+								</div>
+								<div class="pain-point">
+									<div>
+										<strong>Informații dispersate</strong>
+										<p>Date despre trasee incomplete și neactualizate pe surse diferite</p>
+									</div>
+								</div>
+								<div class="pain-point">
+									<div>
+										<strong>Lipsa profilurilor verificate</strong>
+										<p>Nu poate verifica experiența și fiabilitatea partenerilor</p>
+									</div>
+								</div>
+								<div class="pain-point">
+									<div>
+										<strong>Pierdere de timp</strong>
+										<p>Compară trasee din surse diferite fără o soluție centralizată</p>
+									</div>
+								</div>
+								<div class="pain-point">
+									<div>
+										<strong>Lipsa unei platforme complete</strong>
+										<p>Nu există o soluție care să unească hărți, comunitate, organizare și evaluări</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h3 class="subsection-title">User Stories</h3>
+
+			<ul class="user-stories">
+				<li>Ca drumeț cu experiență medie, vreau să filtrez traseele după dificultate, durată și locație, ca să pot găsi rapid un traseu adecvat nivelului meu și timpului disponibil.</li>
+				<li>Ca utilizator care merge cu persoane necunoscute, vreau să văd ratingurile și recenziile altor utilizatori, ca să pot alege parteneri de drumeție de încredere.</li>
+				<li>Ca utilizator experimentat, vreau să creez o drumeție și să invit alți utilizatori să participe, ca să pot planifica eficient o ieșire la munte.</li>
+				<li>Ca persoană care nu cunoaște zona, vreau să vizualizez traseele pe o hartă interactivă cu cabane, izvoare și puncte de interes, ca să pot înțelege mai bine terenul înainte de a pleca.</li>
+				<li>Ca utilizator fidel al aplicației, vreau să am un istoric al drumețiilor parcurse cu poze și review-uri, ca să pot urmări progresul meu și să retrăiesc experiențele din trecut.</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h3 class="subsection-title">User Flows</h3>
+
+			<div class="flow-intro">
+				<p>Flow-ul aplicației este centrat pe <strong>Home / Trails List</strong>, care servește drept punct principal de navigare. Aplicația permite utilizatorilor să exploreze, să participe și să gestioneze trasee montane într-un mod intuitiv și organizat.</p>
+			</div>
+
+			<div class="flow-diagram-container">
+				<div class="flow-diagram">
+					<img src="flows/user-flow-diagram.png" alt="User Flow Diagram" class="flow-image">
+				</div>
+			</div>
+
+			<div class="flow-steps">
+				<!-- Step 1 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">1</div>
+						<h4 class="step-title">Landing Page</h4>
+					</div>
+					<p class="step-description">Punctul de intrare în aplicație</p>
+					<div class="step-actions">
+						<div class="action-item">
+							<span>Navigare la Login Page pentru autentificare</span>
+						</div>
+						<div class="action-item">
+							<span>Navigare la Register Page pentru crearea contului</span>
+						</div>
+						<div class="action-item">
+							<span>Acces direct la Home / Trails List (cu funcționalități limitate dacă utilizatorul nu este autentificat)</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 2 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">2</div>
+						<h4 class="step-title">Login / Register</h4>
+					</div>
+					<p class="step-description">Autentificare și înregistrare utilizatori</p>
+					<div class="step-actions">
+						<div class="action-item">
+							<span>După succes, redirecționare către Home / Trails List</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 3 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">3</div>
+						<h4 class="step-title">Home / Trails List</h4>
+					</div>
+					<p class="step-description">Pagina centrală cu lista traseelor disponibile</p>
+					<div class="step-features">
+						<div class="feature-grid">
+							<div class="feature-item">
+								<div>
+									<strong>Vizualizare detalii traseu</strong>
+									<span>Acces la Trail Details Page</span>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div>
+									<strong>Aplicare filtre</strong>
+									<span>Filter Modal pentru criterii avansate</span>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div>
+									<strong>Căutare trasee</strong>
+									<span>Search Bar pentru căutare rapidă</span>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div>
+									<strong>Creare traseu nou</strong>
+									<span>Create Trail Modal</span>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div>
+									<strong>Acces profil</strong>
+									<span>User Profile Page</span>
+								</div>
+							</div>
+							<div class="feature-item">
+								<div>
+									<strong>Participare trasee</strong>
+									<span>Join Trail Popup</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 4 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">4</div>
+						<h4 class="step-title">Trail Details Page</h4>
+					</div>
+					<p class="step-description">Informații detaliate despre traseu</p>
+					<div class="trail-info">
+						<div class="info-tags">
+							<span class="info-tag">📝 Descriere</span>
+							<span class="info-tag">📏 Distanță</span>
+							<span class="info-tag">⚡ Dificultate</span>
+							<span class="info-tag">👥 Participanți</span>
+							<span class="info-tag">⭐ Rating</span>
+						</div>
+					</div>
+					<div class="step-actions">
+						<div class="action-item">
+							<span>Vizualizare traseu pe hartă (Map View Modal)</span>
+						</div>
+						<div class="action-item">
+							<span>Consultare recenziilor altor participanți (Reviews Section)</span>
+						</div>
+						<div class="action-item">
+							<span> Posibilitatea de a trimite o cerere de participare (Join Trail Popup)</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 5 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">5</div>
+						<h4 class="step-title">User Profile Page</h4>
+					</div>
+					<p class="step-description">Profil utilizator și activitate</p>
+					<div class="profile-sections">
+						<div class="profile-section">
+							<div>
+								<strong>Traseele create</strong>
+								<span>Created Trails</span>
+							</div>
+						</div>
+						<div class="profile-section">
+							<div>
+								<strong>Traseele la care participă</strong>
+								<span>Joined Trails</span>
+							</div>
+						</div>
+						<div class="profile-section">
+							<div>
+								<strong>Istoric participări</strong>
+								<span>History</span>
+							</div>
+						</div>
+						<div class="profile-section">
+							<div>
+								<strong>Recenzii</strong>
+								<span>Trail Reviews</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 6 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">6</div>
+						<h4 class="step-title">Create Trail Modal</h4>
+					</div>
+					<p class="step-description">Adăugare traseu nou</p>
+					<div class="creation-features">
+						<div class="creation-item">
+							<div>
+								<strong>Definire traseu pe hartă</strong>
+								<span>Map Route Modal</span>
+							</div>
+						</div>
+						<div class="creation-item">
+							<div>
+								<strong>Încărcare imagine</strong>
+								<span>Upload Image pentru traseu</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 7 -->
+				<div class="flow-step">
+					<div class="step-header">
+						<div class="step-number">7</div>
+						<h4 class="step-title">Modaluri și Popup-uri Auxiliare</h4>
+					</div>
+					<p class="step-description">Funcționalități suplimentare</p>
+					<div class="modal-grid">
+						<div class="modal-item">
+							<div class="modal-icon">🔍</div>
+							<div class="modal-content">
+								<strong>Filter Modal</strong>
+								<p>Aplică criterii de filtrare pe lista traseelor</p>
+							</div>
+						</div>
+						<div class="modal-item">
+							<div class="modal-icon">🤝</div>
+							<div class="modal-content">
+								<strong>Join Trail Popup</strong>
+								<p>Confirmă cererea de participare la traseu</p>
+							</div>
+						</div>
+						<div class="modal-item">
+							<div class="modal-icon">🗺️</div>
+							<div class="modal-content">
+								<strong>Map View Modal</strong>
+								<p>Afișează traseul pe hartă cu punctele de start și finish</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h3 class="subsection-title">Concluzia interviurilor</h3>
+			
+			<div class="conclusion-card">
+				<div class="conclusion-content">
+					<div class="insight-highlight">
+						<div class="insight-text">
+							<p>Interviurile recente cu potențialii utilizatori au confirmat că abordarea noastră inițială este pe direcția corectă și că majoritatea nevoilor utilizatorilor sunt deja acoperite în design-ul propus.</p>
+						</div>
+					</div>
+
+					<div class="validation-points">
+						<h5>Ce am confirmat din interviuri:</h5>
+						<div class="validation-grid">
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Sistemul de rating și recenzii pentru parteneri este esențial</span>
+							</div>
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Verificarea identității este o prioritate pentru încredere</span>
+							</div>
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Hărțile interactive cu puncte de interes sunt necesare</span>
+							</div>
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Organizarea centralizată este o problemă majoră actuală</span>
+							</div>
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Comunitatea și socializarea sunt motivații cheie</span>
+							</div>
+							<div class="validation-item">
+								<span class="check-icon">✓</span>
+								<span>Informațiile verificate și actualizate sunt cruciale</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="user-quotes">
+						<h5>Feedback-ul utilizatorilor a susținut abordarea noastră:</h5>
+						<div class="quote-grid">
+							<div class="quote-item">
+								<div class="quote-text">
+									"Aș folosi o aplicație care să aibă toate informațiile într-un singur loc și să pot verifica partenerii de drumeție."
+								</div>
+								<div class="quote-author">— Tudor Petracovi</div>
+							</div>
+							<div class="quote-item">
+								<div class="quote-text">
+									"Este important să știu că persoanele cu care merg sunt reale și au experiență verificată."
+								</div>
+								<div class="quote-author">— Claudiu</div>
+							</div>
+							<div class="quote-item">
+								<div class="quote-text">
+									"Aș vrea să pot găsi oameni cu același nivel și interese pentru drumeții mai aventuroase."
+								</div>
+								<div class="quote-author">— Alex</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
     <footer>
       <p>&copy; 2025 TrailMates. Toate drepturile rezervate.</p>
@@ -1839,46 +3225,5 @@
         Construim viitorul drumeției montane în România
       </p>
     </footer>
-
-    <script>
-      document.documentElement.style.scrollBehavior = "smooth";
-
-      // Mock Up
-      const mockupImages = [
-        "WhatsApp Image 2025-11-12 at 09.28.22.jpeg",
-        "WhatsApp Image 2025-11-12 at 09.28.43.jpeg",
-        "WhatsApp Image 2025-11-12 at 09.29.04.jpeg",
-        "WhatsApp Image 2025-11-12 at 09.29.19.jpeg",
-        "WhatsApp Image 2025-11-12 at 09.29.48.jpeg",
-        "WhatsApp Image 2025-11-12 at 09.30.21.jpeg",
-      ];
-      const grid = document.getElementById("mockupGrid");
-      mockupImages.forEach((name) => {
-        const item = document.createElement("div");
-        item.className = "mockup-item";
-        const img = document.createElement("img");
-        img.src = encodeURI(`mockup/${name}`);
-        img.alt = name;
-        img.addEventListener("error", () => item.remove());
-        item.appendChild(img);
-        grid.appendChild(item);
-      });
-
-      // Landing Page
-      const landingImages = ["landingpage1.jpeg", "landingpage2.jpeg"];
-      const landingGrid = document.getElementById("landingGrid");
-      landingImages.forEach((name) => {
-        const item = document.createElement("div");
-        item.className = "mockup-item";
-
-        const img = document.createElement("img");
-        img.src = `landingpage/${name}`;
-        img.alt = name;
-        img.addEventListener("error", () => item.remove());
-        item.appendChild(img);
-
-        landingGrid.appendChild(item);
-      });
-    </script>
   </body>
 </html>
