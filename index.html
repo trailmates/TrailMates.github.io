@@ -1191,6 +1191,7 @@
         <a href="#milestone2">Milestone 2</a>
         <a href="#milestone3">Milestone 3</a>
         <a href="#milestone4">Milestone 4</a>
+		<a href="#milestone5">Milestone 5</a>
       </div>
     </section>
 
@@ -3215,6 +3216,278 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+	</div>
+
+
+    <h2 class="section-title" id="milestone5">Milestone 5</h2>
+	<div class="container">
+		<section class="section" id="lead-collection">
+			<h3 class="section-title">1. Lead collection - PostHog Surveys</h3>
+
+			<p class="content-text">
+				Mecanismul de colectare a lead-urilor a fost implementat direct pe Landing Page folosind <strong style="color: #2c5f2d;">PostHog Surveys</strong>. Acest instrument a afișat un pop-up, conceput pentru a capta adresele de e-mail de la vizitatorii interesați, transformând eficient traficul în potențiali utilizatori.
+			</p>
+			<p class="content-text">
+				Obiectivul principal a fost acela de a stabili o bază de date dedicată de <strong style="color: #2c5f2d;">early adopters</strong> care să poată fi informați constant prin newsletter, asigurând o bază de utilizatori gata pentru lansarea produsului.
+			</p>
+            
+            <div style="text-align: center; margin: 40px 0;">
+				<img 
+					src="campaign/posthog_survey_popup.png" 
+					alt="Screenshot formular deschis PostHog Survey pe Landing Page" 
+					style="max-width: 30%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+				/>
+				<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600">
+					Formularul de colectare a lead-urilor pe Landing Page
+				</p>
+			</div>
+
+			<div class="highlight-box">
+				<h3>Rezumatul chestionarului</h3>
+				<p class="content-text">
+					Chestionarul a înregistrat un total de <strong style="color: #2c5f2d;">99 de de accesări</strong> și a generat <strong style="color: #2c5f2d;">36 de răspunsuri valide (lead-uri)</strong>, rezultând o rată de conversie solidă de <strong style="color: #2c5f2d;">36.36%</strong> în rândul utilizatorilor expuși. Această cifră validează interesul imediat generat de propunerea de valoare a Landing Page-ului.
+				</p>
+				<div style="text-align: center; margin: 20px 0 10px;">
+					<img 
+						src="campaign/posthog_survey_results.png" 
+						alt="Screenshot rezultate formular PostHog Survey" 
+						style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+					/>
+					<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600">
+						Rezultatele chestionarului pentru newsletter în PostHog (36 de Răspunsuri / Rată de Conversie 36.36%)
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="analytics">
+			<h3 class="section-title">2. Analytics</h3>
+
+			<p class="content-text">
+				<strong style="color: #2c5f2d;">PostHog Analytics</strong> a fost integrat pentru a oferi monitorizare în timp real a activității utilizatorilor și pentru a cuantifica eficacitatea eforturilor inițiale de marketing.
+			</p>
+
+			<h4 style="color: #2c5f2d; margin-top: 30px; margin-bottom: 15px;">Web Analytics & Trafic General</h4>
+			<p class="content-text">
+				Platforma a înregistrat un total de <strong style="color: #2c5f2d;">98 de vizitatori</strong>, generând <strong style="color: #2c5f2d;">116 sesiuni</strong> și <strong style="color: #2c5f2d;">189 de vizualizări de pagină</strong>. Durata medie a sesiunii a fost de 3 minute și 33 de secunde, iar rata scăzută de respingere (Bounce Rate) de <strong style="color: #2c5f2d;">26%</strong> continuă să indice un engagement ridicat.
+			</p>
+
+			<div style="text-align: center; margin: 40px 0;">
+				<img 
+					src="campaign/web-analytics-1.png" 
+					alt="Screenshot statistici generale Web Analytics (98 Visitors)" 
+					style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+				/>
+			</div>
+
+			<div style="text-align: center; margin: 40px 0;">
+				<img 
+					src="campaign/web-analytics-2.png" 
+					alt="Screenshot statistici generale Web Analytics (98 Visitors)" 
+					style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+				/>
+			</div>
+			
+			<h4 style="color: #2c5f2d; margin-top: 30px; margin-bottom: 15px;">Funnel de conversie și engagement</h4>
+			<p class="content-text">
+				Funnel-ul de conversie a fost configurat pentru a urmări parcursul utilizatorului pe Landing Page. Etapele intermediare arată un angajament puternic, cu un timp mediu de conversie de <strong style="color: #2c5f2d;">2 minute și 57 de secunde</strong>:
+			</p>
+			<p class="content-text">
+				<strong style="color: #2c5f2d;">Etape parcurse:</strong>
+			</p>
+			<ul style="list-style-type: disc; padding-left: 40px;">
+				<li style="margin-bottom: 5px;">
+					<strong style="color: #2c5f2d;">landing_page_viewed:</strong> 98 de utilizatori (100%) au vizualizat pagina.
+				</li> 
+				<li style="margin-bottom: 5px;">
+					<strong style="color: #2c5f2d;">button_clicked (Join Now / Get Started):</strong> 35 de persoane (35.71%) au dat click pe unul dintre butoanele principale.
+				</li> 
+				<li style="margin-bottom: 5px;">
+					<strong style="color: #2c5f2d;">feature_explored (Follow our journey):</strong> 8 persoane (8.16%) au explorat funcționalitatile din pop-up.
+				</li>
+				<li style="margin-bottom: 5px;">
+					<strong style="color: #2c5f2d;">survey_sent:</strong> 0 persoane au trimis efectiv formularul de colectare (Total conversie 0.00%).
+				</li>
+			</ul>
+			
+			<div style="text-align: center; margin: 40px 0;">
+				<img 
+					src="campaign/funnel.png" 
+					alt="Screenshot Funnel Conversie PostHog" 
+					style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);"
+				/>
+				<p style="margin-top: 15px; color: #2c5f2d; font-weight: 600">
+					Analiza funnel-ului de conversie
+				</p>
+			</div>
+		</section>
+
+		<section class="section" id="lead-generation-campaign">
+			<h3 class="section-title">3. Lead generation campaign</h3>
+			<p class="content-text">
+				După ce am strâns deja <strong style="color: #2c5f2d;">peste 80 de răspunsuri inițiale</strong>, ne-am decis să diferențiem link-urile pentru a urmări mai eficient sursa traficului. Am lansat o campanie de promovare pe canalele sociale relevante, concentrându-ne pe grupuri active de pasionați de munte, utilizând link-uri personalizate (UTM) pentru a urmări sursa traficului. Mai jos sunt documentate postările realizate în campanie.
+			</p>
+			
+			<h4 style="color: #2c5f2d; margin-top: 30px; margin-bottom: 15px;">Segmentarea traficului</h4>
+			<p class="content-text">
+				Pentru a evalua performanța diferitelor canale, am creat Cohorts distincte în PostHog (<strong style="color: #2c5f2d;">"WhatsApp users"</strong> și <strong style="color: #2c5f2d;">"Facebook users"</strong>) și am monitorizat traficul cu UTM, obținând următoarele date:
+			</p>
+
+			<div class="highlight-box">
+				<h4 style="color: #2c5f2d; margin-top: 0; margin-bottom: 15px;">Rezultate trafic UTM</h4>
+				<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+					<thead>
+						<tr style="background-color: #2c5f2d; color: white;">
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Sursă UTM</th>
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Vizitatori</th>
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">URL Utilizat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;"><strong style="color: #2c5f2d;">Facebook</strong></td>
+							<td style="padding: 10px; border: 1px solid #ddd; text-align: center;">5</td>
+							<td style="padding: 10px; border: 1px solid #ddd;"><a href="https://trailmates-app.github.io?utm_source=facebook&utm_medium=social&utm_campaign=organic_post" target="_blank">https://trailmates-app.github.io?utm_source=facebook...</a></td>
+						</tr>
+						<tr>
+							<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;"><strong style="color: #2c5f2d;">WhatsApp</strong></td>
+							<td style="padding: 10px; border: 1px solid #ddd; text-align: center;">4</td>
+							<td style="padding: 10px; border: 1px solid #ddd;"><a href="https://trailmates-app.github.io?utm_source=whatsapp&utm_medium=social&utm_campaign=organic_share" target="_blank">https://trailmates-app.github.io?utm_source=whatsapp...</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h4 style="color: #2c5f2d; margin-top: 30px; margin-bottom: 15px;">Postări pe social media</h4>
+			<style>
+				.campaign-posts-grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+					gap: 30px;
+					margin-top: 20px;
+				}
+				.campaign-post-item {
+					background: #f9f9f9;
+					border-radius: 10px;
+					padding: 15px;
+					box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+					border-left: 4px solid #97c680;
+					text-align: center;
+				}
+				.campaign-post-item img {
+					max-width: 100%;
+					height: auto;
+					border-radius: 8px;
+					margin-bottom: 10px;
+					box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				}
+				.campaign-post-item a {
+					color: #2c5f2d;
+					font-weight: 600;
+					text-decoration: none;
+					display: block;
+					margin-top: 10px;
+					font-size: 0.9em;
+				}
+				.campaign-post-item span.source {
+					display: block;
+					font-style: italic;
+					color: #666;
+					margin-bottom: 5px;
+				}
+			</style>
+
+			<div class="campaign-posts-grid">
+				<div class="campaign-post-item">
+					<span class="source">Facebook - Grup: Nu sunt singur pe munte</span>
+					<img src="campaign/post_fb_1.jpeg" alt="Screenshot Postare Facebook 1" />
+					<a href="https://www.facebook.com/groups/148798398549743/permalink/25062369943432577/?rdid=UmMYa6zGQ7Lo35xT#" target="_blank">Vezi link postare (Facebook)</a>
+				</div>
+				
+				<div class="campaign-post-item">
+					<span class="source">WhatsApp - Grup: Drumeți si Călători</span>
+					<img src="campaign/post_wa_1.jpeg" alt="Screenshot Postare WhatsApp 1" />
+				</div>
+
+				<div class="campaign-post-item">
+					<span class="source">Facebook - Grup: MUNȚI⛰️EXCURSII🌍DRUMEȚII🏡</span>
+					<img src="campaign/post_fb_3.jpeg" alt="Screenshot Postare Facebook 3" />
+					<a href="https://www.facebook.com/groups/MUNTI/permalink/25649781314613436/?rdid=Xf7wyXhRSbwaN3IP#" target="_blank">Vezi link postare (Facebook)</a>
+				</div>
+				
+				<div class="campaign-post-item">
+					<span class="source">WhatsApp - Grup de prieteni</span>
+					<img src="campaign/post_wa_4.jpeg" alt="Screenshot Postare WhatsApp 4" />
+				</div>
+
+				<div class="campaign-post-item">
+					<span class="source">Facebook - Grup: Drumeții montane!</span>
+					<img src="campaign/post_fb_5.jpeg" alt="Screenshot Postare Facebook 5" />
+					<a href="https://www.facebook.com/share/p/1DWSMNxDPz/?mibextid=wwXIfr" target="_blank">Vezi link postare (Facebook)</a>
+				</div>
+				
+				<!-- Aici adaugam alte postari -->
+				<!-- <div class="campaign-post-item">
+					<span class="source">WhatsApp - Grup: Nume grup</span>
+					<img src="campaign/post_wa_6.png" alt="Screenshot Postare WhatsApp 6" />
+				</div>
+
+				<div class="campaign-post-item">
+					<span class="source">Facebook - Grup: Nume grup</span>
+					<img src="campaign/post_fb_7.png" alt="Screenshot Postare Facebook 7" />
+					<a href="https://link" target="_blank">Vezi link postare (Facebook)</a>
+				</div>
+				
+				<div class="campaign-post-item">
+					<span class="source">WhatsApp - Grup: Nume grup</span>
+					<img src="campaign/post_wa_8.png" alt="Screenshot Postare WhatsApp 8" />
+				</div>
+
+				<div class="campaign-post-item">
+					<span class="source">Facebook - Grup: Nume grup</span>
+					<img src="campaign/post_fb_9.png" alt="Screenshot Postare Facebook 9" />
+					<a href="https://trailmates-app.github.io?utm_source=facebook&utm_medium=social&utm_campaign=organic_post" target="_blank">Vezi link postare (Facebook)</a>
+				</div>
+				
+				<div class="campaign-post-item">
+					<span class="source">WhatsApp - Grup: Nume grup</span>
+					<img src="campaign/post_wa_10.png" alt="Screenshot Postare WhatsApp 10" />
+				</div> -->
+			</div>
+
+			<h4 style="color: #2c5f2d; margin-top: 50px; margin-bottom: 15px;">Concluzii </h4>
+			<div class="highlight-box">
+				<h3 style="color: #2c5f2d;">Analiza Comparativă a Canalelor (Punctul 4)</h3>
+				<p class="content-text">
+					Analiza conversiilor și a surselor de trafic (UTM vs. Direct) a confirmat că <strong>încrederea este factorul determinant</strong> în generarea de lead-uri de calitate. Deși traficul organic social (Facebook) este o sursă constantă, cel mai mare succes a venit din recomandările personale.
+				</p>
+				<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+					<thead>
+						<tr style="background-color: #2c5f2d; color: white;">
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Canal Dominant (PostHog)</th>
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: center;">Rată Conversie Survey (Agregată)</th>
+							<th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Motivație și Concluzie</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;"><strong style="color: #2c5f2d;">Trafic Direct (Ipoteză: WhatsApp/Private)</strong></td>
+							<td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">36.36%</td>
+							<td style="padding: 10px; border: 1px solid #ddd;">
+								Această sursă (65 de vizitatori) a generat majoritatea lead-urilor. Rata ridicată de conversie a chestionarului (36.36%) sugerează că acești utilizatori au venit prin <strong style="color: #2c5f2d;">recomandări de încredere</strong> (grupuri mici, mesaje private), unde intenția de înscriere este maximă.
+							</td>
+						</tr>
+						<tr>
+							<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9;"><strong style="color: #2c5f2d;">Facebook (UTM)</strong></td>
+							<td style="padding: 10px; border: 1px solid #ddd; text-align: center;">N/A (Trafic Public)</td>
+							<td style="padding: 10px; border: 1px solid #ddd;">
+								Deși generează volum de vizualizări (Organic Social), ratele de conversie sunt mai mici decât cele ale traficului de încredere. Analiza UTM a identificat 5 vizitatori explicit din această sursă.
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
 	</div>
